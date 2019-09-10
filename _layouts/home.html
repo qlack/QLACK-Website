@@ -77,7 +77,7 @@
 
   <!-- Main container -->
   <main>
-
+    {% assign count = 0 %}
 
     <section id="sec-1">
       <div class="container">
@@ -85,12 +85,16 @@
           <span>little description</span>
           <h2>Qlack Fuse</h2>
 
+          
           {%for module in site.data.modules.Fuse %}
-            <h3>{{module.title}}</h3>
+          {% assign count = count | plus: 1 %}
+            <h3 class="pointer" data-toggle="collapse" data-target="#module{{count}}">{{module.title}}</h3>
+            <div id="module{{count}}" class="collapse">
             <p> {{ module.description }}<br><br>
               For more information:<a
                 href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.title}}"> here</a>
             </p>
+          </div>
             {% endfor %}
         </header>
       </div>
@@ -105,11 +109,14 @@
           <h2>Qlack Util</h2>
 
           {%for module in site.data.modules.Util %}
-          <h3>{{module.title}}</h3>
+          {% assign count = count | plus: 1 %}
+          <h3 class="pointer" data-toggle="collapse" data-target="#module{{count}}">{{module.title}}</h3>
+          <div id="module{{count}}" class="collapse">
           <p> {{ module.description }}<br><br>
             For more information:<a
               href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Util/qlack-util-{{module.title}}"> here</a>
           </p>
+        </div>
           {% endfor %}
         </header>
       </div>
@@ -124,11 +131,14 @@
           <h2>Qlack Tools</h2>
 
           {%for module in site.data.modules.Tools %}
-          <h3>{{module.title}}</h3>
+          {% assign count = count | plus: 1 %}
+          <h3 class="pointer" data-toggle="collapse" data-target="#module{{count}}">{{module.title}}</h3>
+          <div id="module{{count}}" class="collapse">
           <p> {{ module.description }}<br><br>
             For more information:<a
               href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Tools/qlack-tools-{{module.title}}"> here</a>
           </p>
+        </div>
           {% endfor %}
         </header>
       </div>

@@ -9,7 +9,7 @@ xhr.onreadystatechange = function () {
     
      var myObj = JSON.parse(xhr.responseText);
      for (x in myObj) {
-        text+=  "<section class='no-border-bottom'><div class='container'> <header class='section-header'>";
+        text+=  "<section class='no-border-bottom'><div class='container'> <header class='section-header text-left'>";
         text += " <span>" + myObj[x].published_at.slice(0,10) + "</span>";
         text +=  "<h2> Version "+myObj[x].tag_name+"</h2>"
         text +=  "<p class='version-body'>"+ myObj[x].body+"</p>"

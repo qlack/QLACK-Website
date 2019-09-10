@@ -9,7 +9,7 @@ description: Qlack combines a variety of technologies in a cutting-edge technolo
         is available.
 
 
-baseurl: "" 
+baseurl: "/QLACK-website" 
 url: "https://qlack.github.io"
 
 markdown: kramdown
