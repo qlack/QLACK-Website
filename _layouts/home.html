@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>{{site.title}}</title>
+
+  <!-- Styles -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+  <!-- Fonts -->
+  <link
+    href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="assets\img\favicon.ico">
+</head>
+
+<body class="sticky-nav transparent-nav">
+
+  <!--  Navigation -->
+  <nav class="page-navigation full-topbar">
+    <ul class="nav">
+      <li><a href="#sec-1">Qlack Fuse</a></li>
+      <li><a href="#sec-2">Qlack Util</a></li>
+      <li><a href="#sec-3">Qlack Tools</a></li>
+    </ul>
+  </nav>
+  <!-- END Navigation -->
+
+  <!-- Site header -->
+  <header class="site-header">
+
+    <!-- Logo & Navigation -->
+    <nav class="site-navigation">
+      <div class="container">
+        <div class="logo">
+          <a class="logo-default" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+          <a class="logo-transparent" href="index.html"><img src="assets/img/logo-alt.png" alt="logo"></a>
+        </div>
+
+        <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="fa fa-bars"></i></a>
+
+        <ul class="nav-menu">
+          <li><a class="active" href="index.html">HOME</a></li>
+          <li><a href="versions">CHANGELOG</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- END Logo & Navigation -->
+
+    <!-- Header image -->
+    <div class="header-image bg-img-index-header">
+      <div class="container">
+        <h1><strong>{{site.title}}</strong></h1>
+        <h5>{{site.description}}</h5>
+        <br><br><br><br>
+        <p>
+          <a class="btn btn-danger btn-lg" href="#sec-1" style="margin-right:12px;">Learn More</a>
+          <a class="btn btn-dark btn-outline btn-lg hidden-xs" href="https://github.com/qlack/QLACK-Java">Github Repo</a>
+        </p>
+      </div>
+    </div>
+    <!-- END Header image -->
+
+  </header>
+  <!-- END Site header -->
+
+
+  <!-- Main container -->
+  <main>
+
+
+    <section id="sec-1">
+      <div class="container">
+        <header class="section-header text-left">
+          <span>little description</span>
+          <h2>Qlack Fuse</h2>
+
+          {%for module in site.data.modules.Fuse %}
+            <h3>{{module.title}}</h3>
+            <p> {{ module.description }}<br><br>
+              For more information:<a
+                href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.title}}"> here</a>
+            </p>
+            {% endfor %}
+        </header>
+      </div>
+    </section>
+    <!-- END Section - Qlack Fuse -->
+
+    <!-- Section - Qlack Util -->
+    <section id="sec-2">
+      <div class="container">
+        <header class="section-header text-left">
+          <span>little description</span>
+          <h2>Qlack Util</h2>
+
+          {%for module in site.data.modules.Util %}
+          <h3>{{module.title}}</h3>
+          <p> {{ module.description }}<br><br>
+            For more information:<a
+              href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Util/qlack-util-{{module.title}}"> here</a>
+          </p>
+          {% endfor %}
+        </header>
+      </div>
+    </section>
+    <!-- END Section - Qlack Util -->
+
+    <!-- Section - Qlack Tools -->
+    <section id="sec-3">
+      <div class="container">
+        <header class="section-header text-left">
+          <span>little description</span>
+          <h2>Qlack Tools</h2>
+
+          {%for module in site.data.modules.Tools %}
+          <h3>{{module.title}}</h3>
+          <p> {{ module.description }}<br><br>
+            For more information:<a
+              href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Tools/qlack-tools-{{module.title}}"> here</a>
+          </p>
+          {% endfor %}
+        </header>
+      </div>
+    </section>
+    <!-- END Section - Qlack Tools -->
+
+
+
+
+
+  </main>
+  <!-- END Main container -->
+
+  <!-- Site footer -->
+  {% include footer.html %}
+  <!-- END Site footer -->
+
+
+
+
+  <!-- Scripts -->
+  <script src="assets/js/app.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+</body>
+
+
+</html>

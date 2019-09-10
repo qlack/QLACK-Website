@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>{{site.title}}</title>
+
+    <!-- Styles -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+    <!-- Fonts -->
+    <link
+        href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700'
+        rel='stylesheet' type='text/css'>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+
+<body class="sticky-nav">
+    <!-- Site header -->
+    <header class="site-header">
+
+      <!-- Logo & Navigation -->
+      <nav class="site-navigation">
+        <div class="container">
+          <div class="logo">
+            <a class="logo-default" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+            <a class="logo-transparent" href="index.html"><img src="assets/img/logo-alt.png" alt="logo"></a>
+          </div>
+
+          <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="fa fa-bars"></i></a>
+
+          <ul class="nav-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="active" href="versions">CHANGELOG</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- END Logo & Navigation -->
+
+      <!-- Header image -->
+      <div class="header-image bg-orange no-overlay no-padding">
+        <div class="container">
+          <br><br><br>
+          <h1><strong>Changelog,</strong> history</h1>
+          <h3>You'll find the record of all the changes made to the Qlack, such as new features, bug fixes, improvements, etc.</h3>
+          <br><br><br>
+        </div>
+      </div>
+      <!-- END Header image -->
+
+    </header>
+    <!-- END Site header -->
+
+
+
+    <!-- Main container -->
+    <main>
+          <p id="versions"></p>
+    </main>
+    <!-- END Main container -->
+
+  <!-- Site footer -->
+  {% include footer.html %}
+   <!-- END Site footer -->
+
+
+
+    <!-- Scripts -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/versions.js"></script>
+
+</body>
+</html>

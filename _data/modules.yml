@@ -1,0 +1,133 @@
+######################## Qlack Fuse ###############################################
+###################################################################################
+Fuse:
+
+  - aaa-annotations:
+    title: aaa-annotations
+    description: This module provides authorization (access control) which is carried out by an AspectJ class that works as an interceptor.
+                 This class intercepts every call on an endpoint or a business method annotated by the @ResourceAccess annotation and authorizes the request 
+                 by matching permissions described by @ResourceOperation annotation with user/group/resource permissions provided by the authenticated user principal. 
+                 @ResourceAccess can be described by multiple @ResourceOperation annotations.
+
+  - aaa:
+    title: aaa
+    description:  The authentication, authorisation and accounting (aaa) module is a user account information repository providing you all the required services in order to manage your users, 
+                  authenticate them and authorise them using a variety of authorisation static or dynamically evaluated rules.
+
+  - acv:
+    title: acv
+    description:  This module provides Object Auditing, Comparison and Versioning operations.
+
+  - audit:
+    title: audit
+    description:  This module provides standard operations for system audit actions.
+
+  - content-manager:
+    title: content-manager
+    description:  description
+
+  - crypto:
+    title: crypto
+    description:  An extensive cryptography module allowing to perform signing,
+                  comparison, evaluations, management and encryption/decryption functions.
+
+  - fileupload:
+    title: fileupload
+    description:  This module provides file upload functionality. It is design to use flow.js as the chunks 
+                  generation and file upload mechanism but could be integrated with other libraries.
+
+  - imaging:
+    title: imaging
+    description:  description
+
+  - lexicon:
+    title: lexicon
+    description:  A full translation management solution.
+
+  - mailing:
+    title: mailing
+    description:  This module is responsible for configuring, storing and sending internal/external mailing of the application.
+
+  - rules:
+    title: rules
+    description:  description
+
+  - scheduler:
+    title: scheduler
+    description:  This module is responsible for creating and scheduling custom application jobs by using Spring Quartz.
+
+  - search:
+    title: search
+    description:   This module provides connection and communication with an elastic search database. 
+
+
+  - security:
+    title: security
+    description:  The QLACK-based Spring Security implementation, which provides user authentication functionality
+
+  - settings:
+    title: settings
+    description:  This module is responsible for storing and configuring internal settings of the application.
+
+  - workflow:
+    title: workflow
+    description:  A complete workflow solution allowing you to manipulate user-defined workflows,
+                  query for their progress, current state, etc.
+
+######################## Qlack Util ###############################################
+###################################################################################
+
+Util:
+
+  - av-api:
+    title: av-api
+    description:  description
+
+  - clam-av:
+    title: clam-av
+    description:  This module provides file virus scanning functionality using a Clam AntiVirus server instance.
+
+  - data-mongo:
+    title: data-mongo
+    description:  description
+
+  - data:
+    title: data
+    description:  description
+
+  - documentation:
+    title: documentation
+    description:  This module generate application documentation based on the Javadocs using Enunciate Swagger-UI libraries.
+
+  - fileutils:
+    title: fileutils
+    description:  This module provides basic file utility methods.
+
+  - hibernate:
+    title: hibernate
+    description:  A collection of Hibernate/JPA utilities 
+
+  - jwt:
+    title: jwt
+    description:  description
+  
+  - logger:
+    title: logger
+    description:  This module provides method execution logging functionality based on the @Logged annotation and AspectJ.
+
+  - querydsl:
+    title: querydsl
+    description:  description
+
+######################## Qlack Tools ###############################################
+###################################################################################
+
+Tools:
+
+  - liquibase:
+    title: liquibase
+    description:  This tool tries to provide solutions to some usual development use cases pertaining to the evolution of your database schema in your project.
+                  The first thing it does is allowing you to produce an initial Liquibase changeset capturing the current state of your schema. 
+                  This should be, usually, used in the beginning of your project once you have prepared the initial version of your schema.
+                  The second thing it does is producing liquibase changesets capturing changes on the above schema. 
+                  This allows you to keep changing your schema using the tools you know rather than having to perform all changes via manually-crafted Liquibase changesets.
