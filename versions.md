@@ -1,3 +1,3 @@
 ---
-layout: changelog
+layout: versions
 ---

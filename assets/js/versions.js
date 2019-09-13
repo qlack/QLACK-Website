@@ -2,7 +2,7 @@ var text="";
 var xhr = new XMLHttpRequest(),
   method = "GET",
   url = "https://api.github.com/repos/qlack/QLACK-Java/releases";
-
+  
 xhr.open(method, url, true);
 xhr.onreadystatechange = function () {
   if (xhr.readyState === 4 && xhr.status === 200) {
@@ -17,7 +17,8 @@ xhr.onreadystatechange = function () {
    }
     
     document.getElementById("versions").innerHTML = text;
-      console.log(myObj[x].tag_name);
+   
+    
   }
 };
 xhr.send();

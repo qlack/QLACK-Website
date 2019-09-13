@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>{{site.title}}-Tools</title>
+
+    <!-- Styles -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+    <!-- Fonts -->
+    <link
+        href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700'
+        rel='stylesheet' type='text/css'>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+
+<body class="sticky-nav  ">
+
+<!--  Navigation -->
+<nav class="page-navigation full-topbar">
+        <ul class="nav">
+            {% assign count = 0 %}
+            {%for module in site.data.modules.Tools %}
+              {% assign count = count | plus: 1 %}  
+          <li><a href="#menu{{count}}">{{module.title}} </a> </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <!-- END Navigation -->
+
+
+    <!-- Site header -->
+    <header class="site-header">
+
+        <!-- Logo & Navigation -->
+        <nav class="site-navigation">
+            <div class="container">
+                <div class="logo">
+                    <a class="logo-default" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+                    <a class="logo-transparent" href="index.html"><img src="assets/img/logo-alt.png" alt="logo"></a>
+                </div>
+
+                <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="fa fa-bars"></i></a>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="fuse">FUSE</a></li>
+                    <li><a href="util">UTIL</a></li>
+                    <li><a class="active" href="tools">TOOLS</a></li>
+                    <li><a href="versions">VERSIONS</a></li>
+                    <li><a href="versions">WEBDESKTOP</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- END Logo & Navigation -->
+
+        <!-- Header image -->
+        <div class="header-image bg-orange no-overlay no-padding ">
+            <div class="container">
+                <br><br><br>
+                <h1><strong>TOOLS</strong></h1>
+                <h3>Description</h3>
+                <br><br><br>
+            </div>
+        </div>
+        <!-- END Header image -->
+
+    </header>
+    <!-- END Site header -->
+
+
+
+    <!-- Main container -->
+    <main>
+        {% assign count = 0 %}
+         <!-- Section - Qlack Tools -->
+         <section>
+            <div class="container">
+              <header class="section-header ">
+                <span>
+                  <!--little description --></span>
+                  
+                <h2>Qlack Tools </h2>
+                <p>Qlack Tools has the following modules:</p>
+              </header>
+                <ul class="step-text step-cols-2">
+                {%for module in site.data.modules.Tools %}
+                {% assign count = count | plus: 1 %}
+                <li>
+                <h4 id="menu{{count}}" class="pointer" data-toggle="collapse" data-target="#module{{count}}">
+                    {{module.title}} </h4>
+                  <div id="module{{count}}" class="collapse in ">
+                    <p> {{ module.description }}<br><br>
+                      For more information:<a
+                        href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Tools/qlack-tools-{{module.title}}">
+                        here</a>
+                    </p>
+                  </div>
+                </li>
+                    
+                {% endfor %}
+                </ul>
+              
+            </div>
+          </section>
+      <!-- END Section - Qlack Tools -->
+
+    </main>
+    <!-- END Main container -->
+
+    <!-- Site footer -->
+    {% include footer.html %}
+    <!-- END Site footer -->
+
+
+
+    <!-- Scripts -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+</body>
+
+</html>

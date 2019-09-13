@@ -8,10 +8,11 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <title>{{site.title}}</title>
+  <title>{{site.title}}-Fuse</title>
 
   <!-- Styles -->
   <link href="assets/css/main.css" rel="stylesheet">
+
 
 
   <!-- Fonts -->
@@ -21,10 +22,22 @@
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="icon" href="assets\img\favicon.ico">
+  <link rel="icon" href="assets/img/favicon.ico">
 </head>
 
-<body class="sticky-nav transparent-nav">
+<body class="sticky-nav ">
+
+  <!--  Navigation -->
+  <nav class="page-navigation full-topbar">
+    <ul class="nav">
+      {% assign count = 0 %}
+      {%for module in site.data.modules.Fuse %}
+      {% assign count = count | plus: 1 %}
+      <li><a href="#menu{{count}}">{{module.title}}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <!-- END Navigation -->
 
   <!-- Site header -->
   <header class="site-header">
@@ -40,8 +53,8 @@
         <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="fa fa-bars"></i></a>
 
         <ul class="nav-menu">
-          <li><a class="active" href="index.html">HOME</a></li>
-          <li><a href="fuse">FUSE</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a class="active" href="fuse">FUSE</a></li>
           <li><a href="util">UTIL</a></li>
           <li><a href="tools">TOOLS</a></li>
           <li><a href="versions">VERSIONS</a></li>
@@ -52,14 +65,12 @@
     <!-- END Logo & Navigation -->
 
     <!-- Header image -->
-    <div class="header-image bg-img-index-header">
+    <div class="header-image bg-orange no-overlay no-padding">
       <div class="container">
-        <h1><strong>{{site.title}}</strong></h1>
-        <h5>{{site.description}}</h5>
-        <br><br><br><br>
-        <p>
-          <a class="btn btn-danger btn-lg" href="https://github.com/qlack/QLACK-Java" style="margin-right:12px;">Github Repo</a>
-        </p>
+        <br><br><br>
+        <h1><strong>FUSE</strong></h1>
+        <h3>Description</h3>
+        <br><br><br>
       </div>
     </div>
     <!-- END Header image -->
@@ -68,10 +79,50 @@
   <!-- END Site header -->
 
 
+
+
   <!-- Main container -->
   <main>
-    
+
+    {% assign count = 0 %}
+
+    <!--  Section - Qlack Fuse -->
+    <section>
+      <div class="container">
+        <header class="section-header ">
+          <span>
+            <!--little description --></span>
+
+          <h2>Qlack Fuse </h2>
+          <p>Qlack Fuse has the following modules:</p>
+        </header>
+        <ul class="step-text step-cols-2">
+          {%for module in site.data.modules.Fuse %}
+          {% assign count = count | plus: 1 %}
+          <li>
+            <h4 id="menu{{count}}" class="pointer" data-toggle="collapse" data-target="#module{{count}}">
+              {{module.title}} </h4>
+            <div id="module{{count}}" class="collapse in">
+              <p> {{ module.description }}<br><br>
+                For more information:<a
+                  href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Util/qlack-util-{{module.title}}">
+                  here</a>
+              </p>
+            </div>
+          </li>
+
+          {% endfor %}
+        </ul>
+
+      </div>
+    </section>
+    <!-- END Section - Qlack Fuse -->
+
+
   </main>
+
+
+
   <!-- END Main container -->
 
   <!-- Site footer -->
@@ -79,14 +130,13 @@
   <!-- END Site footer -->
 
 
+
   <!-- Scripts -->
   <script src="assets/js/app.min.js"></script>
   <script src="assets/js/custom.js"></script>
 
-  
 
 
 </body>
-
 
 </html>
