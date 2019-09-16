@@ -14039,20 +14039,20 @@ pre {
     position: relative;
     padding-left: 60px;
     margin-bottom: 24px;
-    &:before {
-      content: counter(b, decimal-leading-zero) ".";
-      counter-increment: b;
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: #606873;
-      font-family: Montserrat,sans-serif;
-      font-size: 22px;
-      width: 42px;
-      height: 34px;
-      line-height: 34px;
-      font-weight: 600;
-    }
+  // //TODO:adding numbers  &:before {
+  //     content: counter(b, decimal-leading-zero) ".";
+  //     counter-increment: b;
+  //     position: absolute;
+  //     left: 0;
+  //     top: 0;
+  //     color: #606873;
+  //     font-family: Montserrat,sans-serif;
+  //     font-size: 22px;
+  //     width: 42px;
+  //     height: 34px;
+  //     line-height: 34px;
+  //     font-weight: 600;
+  //   }
     > {
       span {
         color: #96a2b2;

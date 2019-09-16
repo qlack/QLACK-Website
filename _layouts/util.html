@@ -24,7 +24,7 @@
   <link rel="icon" href="assets/img/favicon.ico">
 </head>
 
-<body class="sticky-nav ">
+<body class="sticky-nav transparent-nav">
 
   <!--  Navigation -->
   <nav class="page-navigation full-topbar">
@@ -58,49 +58,62 @@
           <li><a href="fuse">FUSE</a></li>
           <li><a class="active" href="util">UTIL</a></li>
           <li><a href="tools">TOOLS</a></li>
+          <li><a href="webdesktop">WEBDESKTOP</a></li>
           <li><a href="versions">VERSIONS</a></li>
-          <li><a href="versions">WEBDESKTOP</a></li>
         </ul>
       </div>
     </nav>
     <!-- END Logo & Navigation -->
 
     <!-- Header image -->
-    <div class="header-image bg-orange no-overlay no-padding">
+    <div class="header-image bg-img-faq-header no-padding-bottom ">
       <div class="container">
-        <br><br><br>
-        <h1><strong>UTIL</strong></h1>
-        <h3>Description</h3>
+        <h1><strong>Util</strong></h1>
+        <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum.</h5>
+        <br><br>
+        <div id="faq-search" class="form-group">
+          <i class="fa fa-search fa-flip-horizontal1"></i>
+          <input type="text" class="form-control" name="search" placeholder="Type to search...">
+        </div>
         <br><br><br>
       </div>
     </div>
     <!-- END Header image -->
 
   </header>
+  <!-- END Header image -->
+
+  </header>
   <!-- END Site header -->
 
 
   <!-- Main container -->
-  <main>
+  <main id="faq-result">
 
-      
-      <!-- Section - Qlack Util -->
-    <section id="sec-quick-start">
-        {% assign count = 0 %}
+
+    <!-- Section - Qlack Util -->
+    <section id="sec-quick-start" class="no-border-bottom">
+      {% assign count = 0 %}
       <div class="container">
-        <header class="section-header ">
-          <span><!--little description --></span>
- 
+        <header class="section-header text-left ">
+          <span>
+            <!--little description --></span>
+
           <h2>Qlack Util</h2>
-          <p>Qlack Util has the following modules:</p>
+
         </header>
-        
-        <ul class="step-text step-cols-2 ">
+
+        <ul class="faq-items">
           {%for module in site.data.modules.Util %}
           {% assign count = count | plus: 1 %}
           <li>
             <h4 id="menu{{count}}" class="pointer" data-toggle="collapse" data-target="#module{{count}}">
-              {{module.title}}  </h4>
+              {{module.title}} </h4>
             <div id="module{{count}}" class="collapse in ">
               <p> {{ module.description }}<br><br>
                 For more information:<a
@@ -112,14 +125,14 @@
           {% endfor %}
         </ul>
 
-      
+
       </div>
     </section>
 
 
-   
+
     <!-- END Section - Qlack Util -->
-    
+
 
 
   </main>
