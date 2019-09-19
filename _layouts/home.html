@@ -1,93 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+{% include head.html %}
 
-  <title>{{site.title}}</title>
+<body class="sticky-nav transparent-nav ">
 
-  <!-- Styles -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <div class="main-container header-image bg-img-index-header">
+    <!-- Site header -->
+    <header class="site-header">
 
+      <!-- Logo & Navigation -->
+      <nav class="site-navigation">
+        <div class="container">
+          <div class="logo">
+            <a class="logo-default" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+            <a class="logo-transparent" href="index.html"><img src="assets/img/logo-alt.png" alt="logo"></a>
+          </div>
 
-  <!-- Fonts -->
-  <link
-    href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700'
-    rel='stylesheet' type='text/css'>
+          <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="fa fa-bars"></i></a>
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="icon" href="assets\img\favicon.ico">
-</head>
-
-<body class="sticky-nav transparent-nav">
-
-  <!-- Site header -->
-  <header class="site-header">
-
-    <!-- Logo & Navigation -->
-    <nav class="site-navigation">
-      <div class="container">
-        <div class="logo">
-          <a class="logo-default" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
-          <a class="logo-transparent" href="index.html"><img src="assets/img/logo-alt.png" alt="logo"></a>
+          <ul class="nav-menu">
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="fuse">FUSE</a></li>
+            <li><a href="util">UTIL</a></li>
+            <li><a href="tools">TOOLS</a></li>
+            <li><a href="webdesktop">WEBDESKTOP</a></li>
+            <li><a href="versions">VERSIONS</a></li>
+          </ul>
         </div>
+      </nav>
+      <!-- END Logo & Navigation -->
 
-        <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="fa fa-bars"></i></a>
-
-        <ul class="nav-menu">
-          <li><a class="active" href="index.html">HOME</a></li>
-          <li><a href="fuse">FUSE</a></li>
-          <li><a href="util">UTIL</a></li>
-          <li><a href="tools">TOOLS</a></li>
-          <li><a href="webdesktop">WEBDESKTOP</a></li>
-          <li><a href="versions">VERSIONS</a></li>
-        </ul>
+      <!-- Header description -->
+      <div>
+      
+        <div class="container">
+          <h1><strong>{{page.title}}</strong></h1>
+          <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus
+            PageMaker including versions of Lorem Ipsum.</h5>
+          <br><br><br><br>
+          <p>
+            <a class="btn btn-danger btn-lg" href="https://github.com/qlack/QLACK-Java"
+              style="margin-right:12px;">Github
+              Repo</a>
+          </p>
+        </div>
       </div>
-    </nav>
-    <!-- END Logo & Navigation -->
+      <!-- END Header description -->
 
-    <!-- Header image -->
-    <div class="header-image bg-img-index-header">
-      <div class="container">
-        <h1><strong>{{site.title}}</strong></h1>
-        <h5>{{site.description}}</h5>
-        <br><br><br><br>
-        <p>
-          <a class="btn btn-danger btn-lg" href="https://github.com/qlack/QLACK-Java" style="margin-right:12px;">Github
-            Repo</a>
-        </p>
-      </div>
-    </div>
-    <!-- END Header image -->
+    </header>
+    <!-- END Site header -->
 
-  </header>
-  <!-- END Site header -->
+    <!-- Main container -->
+    <main>
 
+    </main>
+    <!-- END Main container -->
+  </div>
+    <!-- Site footer -->
+    {% include footer.html %}
+    <!-- END Site footer -->
 
-  <!-- Main container -->
-  <main>
-
-  </main>
-  <!-- END Main container -->
-
-  <!-- Site footer -->
-  {% include footer.html %}
-  <!-- END Site footer -->
-
-
+  
   <!-- Scripts -->
   <script src="assets/js/app.min.js"></script>
   <script src="assets/js/custom.js"></script>
 
-
-
-
 </body>
-
 
 </html>

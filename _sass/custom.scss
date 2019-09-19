@@ -4,23 +4,38 @@
   }
   
   .bg-img-index-header {
-    background-image: url(../img/bg-index.jpg);
+    background-image: url(../img/index.jpg);
   }
   
-  .bg-img-fact {
-    background-image: url(../img/bg-fact.jpg);
+  .bg-img-page-fuse-header {
+    
+    background-image: url(../img/fuse.jpg);
   }
-  
-  .bg-img-purchase {
-    background-image: url(../img/bg-purchase.png);
+  .bg-img-page-util-header {
+    background-image: url(../img/util.jpg);
   }
-  
-  .bg-img-faq-header, .bg-img-tutorial-header {
-    background-image: url(../img/bg-page.jpg);
+
+  .bg-img-page-tools-header {
+    background-image: url(../img/tools.jpg);
   }
-  
+  .bg-img-page-versions-header {
+    background-image: url(../img/versions.jpg);
+  }
+  // end custom images
    .version-body {
     white-space: pre-line;
   }
 
   .pointer {cursor: pointer;}
+
+  .main-container{
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 200px; /* height of your footer */
+
+  }
+
+
+ 

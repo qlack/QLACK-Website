@@ -1,3 +1,4 @@
 ---
-layout: fuse                        
+layout: fuse    
+title: Qlack-Fuse                    
 ---

@@ -14,6 +14,9 @@ html {
 
 body {
   margin: 0;
+  position: relative;
+  height: 100%;
+  
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
@@ -12053,13 +12056,12 @@ iframe {
 
 section {
   position: relative;
-  padding: 40px 32px;
+  padding: 40px 25px;
   z-index: 0;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  border-bottom: 1px solid #eceeef;
   &.bg-repeat {
     background-repeat: repeat;
     background-size: auto;
@@ -12292,8 +12294,8 @@ section {
     border-bottom: none;
   }
   &.section-sm {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 15px;
+    padding-bottom: 12px;
   }
   &.section-lg {
     padding-top: 164px;
@@ -12335,7 +12337,7 @@ section {
 .header-image {
   position: relative;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
   padding: 180px 0;
@@ -12440,7 +12442,7 @@ section {
       display: inline-block;
       padding: 0 2px;
       &:hover > a {
-        color: #9e7dd3;
+        color: #f36;
         &.menu-highlighted {
           color: #fff;
         }
@@ -12458,12 +12460,12 @@ section {
       color: #818a91;
       transition: color .2s linear,line-height .2s linear;
       &:hover {
-        color: #9e7dd3;
+        color: #f36;
         text-decoration: none;
       }
       &.active {
-        color: #9e7dd3;
-        border-top: 2px solid #9e7dd3;
+        color: #f36;
+        border-top: 2px solid #f36;
       }
       &.menu-highlighted {
         line-height: 50px;
@@ -12516,7 +12518,7 @@ section {
 }
 
 .offcanvas-show .navbar-toggle {
-  color: #9e7dd3;
+  color:  #f36;
 }
 
 .sticky-nav {
@@ -12569,20 +12571,20 @@ section {
     }
     .nav-menu {
       > li:hover > a {
-        color: #fff;
-        border-top-color: #fff;
+        color: #f36;
+        border-top-color: #f36;
       }
       a {
         &.active, &:hover {
-          color: #fff;
-          border-top-color: #fff;
+          color: #f36;
+          border-top-color: #f36;
         }
       }
     }
     .navbar-toggle {
       &.active, &:hover {
-        color: #fff;
-        border-top-color: #fff;
+        color: #f36;
+        border-top-color: #f36;
       }
     }
     .nav-menu ul a {
@@ -12612,20 +12614,20 @@ section {
       }
       .nav-menu {
         > li:hover > a {
-          color: #9e7dd3;
-          border-top-color: #9e7dd3;
+          color: #f36;
+          border-top-color: #f36;
         }
         a {
           &.active, &:hover {
-            color: #9e7dd3;
-            border-top-color: #9e7dd3;
+            color: #f36;
+            border-top-color: #f36;
           }
         }
       }
       .navbar-toggle {
         &.active, &:hover {
-          color: #9e7dd3;
-          border-top-color: #9e7dd3;
+          color: #f36;
+          border-top-color: #f36;
         }
       }
       .nav-menu a.menu-highlighted {
@@ -12715,7 +12717,7 @@ section {
   .transparent-nav .site-navigation .nav-menu a {
     color: #818a91;
     &.active, &:hover {
-      color: #9e7dd3;
+      color: #f36;
     }
     &.menu-highlighted {
       color: #fff;
@@ -13065,8 +13067,14 @@ section {
 }
 
 .site-footer {
+  
   background-color: #161b1f;
-  padding: 45px 0;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+   
+ 
   .back-to-top {
     text-align: right;
     margin: 0;
