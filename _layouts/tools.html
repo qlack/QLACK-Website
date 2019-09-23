@@ -80,13 +80,13 @@
             <h2>Qlack Tools </h2>
             <p>Qlack Tools has the following modules:</p>
           </header>
-          <ul class="step-text step-cols-2 ">
+          <ul class="step-text step-cols-1 ">
             {%for module in site.data.modules.Tools %}
             {% assign count = count | plus: 1 %}
             <li>
               <h4 id="menu{{count}}">
                 {{module.title}} </h4>
-              <p> {{ module.description }}<br><br>
+              <p class="text-cols-2"> {{ module.description }}<br><br>
                 For more information:<a
                   href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Tools/qlack-tools-{{module.title}}">
                   here</a>

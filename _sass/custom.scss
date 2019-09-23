@@ -4,22 +4,24 @@
   }
   
   .bg-img-index-header {
-    background-image: url(../img/index.jpg);
+    
+    // image with opacity 0.7
+    background-image: linear-gradient(rgba(1,30,47,0.7), rgba(255,255,255,0.7)), url(../img/index.jpg);
   }
   
   .bg-img-page-fuse-header {
     
-    background-image: url(../img/fuse.jpg);
+    background-image: linear-gradient(rgba(1,30,47,0.3), rgba(255,255,255,0.3)), url(../img/fuse.jpg);
   }
   .bg-img-page-util-header {
-    background-image: url(../img/util.jpg);
+    background-image:  url(../img/util.jpg);
   }
 
   .bg-img-page-tools-header {
-    background-image: url(../img/tools.jpg);
+    background-image:  url(../img/tools.jpg);
   }
   .bg-img-page-versions-header {
-    background-image: url(../img/versions.jpg);
+    background-image:  url(../img/versions.jpg);
   }
   // end custom images
    .version-body {
