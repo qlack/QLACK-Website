@@ -6,7 +6,7 @@
   .bg-img-index-header {
     
     // image with opacity 0.7
-    background-image: linear-gradient(rgba(1,30,47,0.7), rgba(255,255,255,0.7)), url(../img/index.jpg);
+    background-image: linear-gradient(rgba(1,30,47,0.5), rgba(255,255,255,0.5)), url(../img/index.jpg);
   }
   
   .bg-img-page-fuse-header {
@@ -14,7 +14,7 @@
     background-image: linear-gradient(rgba(1,30,47,0.3), rgba(255,255,255,0.3)), url(../img/fuse.jpg);
   }
   .bg-img-page-util-header {
-    background-image:  url(../img/util.jpg);
+    background-image: linear-gradient(rgba(1,30,47,0.5), rgba(255,255,255,0.5)),  url(../img/util.jpg);
   }
 
   .bg-img-page-tools-header {
@@ -37,6 +37,26 @@
     position: relative;
     padding-bottom: 200px; /* height of your footer */
 
+  }
+  
+  .btn-custom {
+    line-height: 25px;
+    padding: 0 40px;
+  }
+
+.custom-window-code{
+  border: 1px solid #eceeef;
+  border-radius: 3px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  display: block;
+
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 400px;
+  overflow: auto;
   }
 
 

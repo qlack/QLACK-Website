@@ -7,12 +7,14 @@
   
   <div class="main-container ">
     <!--  Navigation -->
-    <nav class="page-navigation full-topbar">
+     <nav class="page-navigation full-topbar">
       <ul class="nav">
         {% assign count = 0 %}
-        {%for module in site.data.modules.Fuse %}
+        {%for module in site.modules %}  
+        {% if module.category == 'fuse' %}
         {% assign count = count | plus: 1 %}
         <li><a href="#menu{{count}}">{{module.title}}</a></li>
+        {% endif %}
         {% endfor %}
       </ul>
     </nav>
@@ -81,12 +83,24 @@
             <p>Qlack Fuse has the following modules:</p>
           </header>
           <ul class="step-text step-cols-2">
-            {%for module in site.data.modules.Fuse %}
+            {%for module in site.modules %}  
+            {% if module.category == 'fuse' %}
             {% assign count = count | plus: 1 %}
+
+            {% assign value = count | modulo:2 %}
+            {% if   value == 0  %}
+            <li>
+              <div class="custom-window-code my-custom-scrollbar bg-gray-lightest ">
+
+                {{module.content}}
+
+              </div>
+
+            </li>
             <li>
               <h4 id="menu{{count}}">
                 {{module.title}} </h4>
-              <div id="module{{count}}">
+              <div>
                 <p> {{ module.description }}<br><br>
                   For more information:<a
                     href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.title}}">
@@ -94,6 +108,31 @@
                 </p>
             </li>
 
+            {% else %}
+
+            <li>
+              <h4 id="menu{{count}}">
+                {{module.title}} </h4>
+              <div>
+                <p> {{ module.description }}<br><br>
+                  For more information:<a
+                    href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.title}}">
+                    here</a>
+                </p>
+            </li>
+            <li>
+              <div class="custom-window-code my-custom-scrollbar bg-gray-lightest ">
+
+                {{module.content}}
+
+              </div>
+
+
+            </li>
+
+            {% endif %}
+
+            {% endif %}
             {% endfor %}
           </ul>
         </div>
