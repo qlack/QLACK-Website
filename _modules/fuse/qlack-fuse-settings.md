@@ -5,7 +5,7 @@ category: fuse
 description:  This module is responsible for storing and configuring internal settings of the application.
 ---
 
-# QLACK Settings module
+## QLACK Settings module
 
 This module is responsible for storing and configuring internal settings of the application.
 

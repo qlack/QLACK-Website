@@ -5,7 +5,7 @@ category: fuse
 description:  This module is responsible for creating and scheduling custom application jobs by using Spring Quartz.
 ---
 
-# QLACK scheduler module
+## QLACK scheduler module
 
 This module is responsible for creating and scheduling custom application jobs by using Spring Quartz.
 

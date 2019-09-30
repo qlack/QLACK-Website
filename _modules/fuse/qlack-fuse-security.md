@@ -5,7 +5,7 @@ category: fuse
 description:  The QLACK-based Spring Security implementation, which provides user authentication functionality
 ---
 
-# QLACK Security module
+## QLACK Security module
 
 The QLACK-based Spring Security implementation, which provides user authentication functionality based on the https://spring.io/projects/spring-security[Spring Security framework] and JWT (JSON Web Tokens) standard, https://tools.ietf.org/html/rfc7519[RFC-7519].
 

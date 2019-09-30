@@ -5,7 +5,7 @@ category: fuse
 description:  This module provides standard operations for system audit actions.
 ---
 
-# QLACK Audit module
+## QLACK Audit module
 
 This module provides standard operations for system audit actions.
 

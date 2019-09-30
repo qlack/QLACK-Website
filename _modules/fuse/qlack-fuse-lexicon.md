@@ -5,7 +5,7 @@ category: fuse
 description:  A full translation management solution.
 ---
 
-# QLACK Lexicon module
+## QLACK Lexicon module
 
 This module provides language translations for the system.
 

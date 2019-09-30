@@ -8,7 +8,7 @@ description: This module provides authorization (access control) which is carrie
                  @ResourceAccess can be described by multiple @ResourceOperation annotations.
 ---
 
-# QLACK AAA Annotations module
+## QLACK AAA Annotations module
 
 This module provides authorization (access control) which is carried out by an AspectJ class that works as an interceptor. This class intercepts every call on an endpoint or a business method annotated by the @ResourceAccess annotation and authorizes the request by matching permissions described by @ResourceOperation annotation with user/group/resource permissions provided by the authenticated user principal. @ResourceAccess can be described by multiple @ResourceOperation annotations.
 

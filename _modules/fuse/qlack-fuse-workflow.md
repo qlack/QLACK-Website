@@ -5,7 +5,7 @@ category: fuse
 description:  A complete workflow solution allowing you to manipulate                    user-defined workflows,query for their progress, current state, etc.
 ---
 
-# QLACK Workflow module
+## QLACK Workflow module
 
 This module uses the Activiti BPM tool and provides functionalities for creating and managing workflow instances.
 

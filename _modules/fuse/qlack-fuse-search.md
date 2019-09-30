@@ -5,7 +5,7 @@ category: fuse
 description:   This module provides connection and communication with an elastic search database.
 ---
 
-# QLACK Search module
+## QLACK Search module
  
  This module provides connection and communication with an elastic search database. 
 

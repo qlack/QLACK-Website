@@ -5,7 +5,7 @@ category: fuse
 description:  This module provides file upload functionality. It is design to use flow.js                  as the chunks generation and file upload mechanism but could be integrated                     with other libraries.
 ---
 
-# QLACK fileupload module
+## QLACK fileupload module
 
 This module provides file upload functionality. It is design to use flow.js as the chunks 
 generation and file upload mechanism but could be integrated with other libraries.

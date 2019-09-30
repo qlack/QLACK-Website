@@ -5,7 +5,7 @@ category: fuse
 description:  This module is responsible for configuring, storing and sending internal/external mailing of the application.
 ---
 
-# QLACK mailing module
+## QLACK mailing module
 
 This module is responsible for configuring, storing and sending internal/external mailing of the application.
 

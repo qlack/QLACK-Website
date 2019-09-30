@@ -4,13 +4,13 @@
 {% include head.html %}
 
 <body class="sticky-nav ">
-  
+
   <div class="main-container ">
     <!--  Navigation -->
-     <nav class="page-navigation full-topbar">
+    <nav class="page-navigation full-topbar">
       <ul class="nav">
         {% assign count = 0 %}
-        {%for module in site.modules %}  
+        {%for module in site.modules %}
         {% if module.category == 'fuse' %}
         {% assign count = count | plus: 1 %}
         <li><a href="#menu{{count}}">{{module.title}}</a></li>
@@ -83,55 +83,47 @@
             <p>Qlack Fuse has the following modules:</p>
           </header>
           <ul class="step-text step-cols-2">
-            {%for module in site.modules %}  
+            {%for module in site.modules %}
             {% if module.category == 'fuse' %}
             {% assign count = count | plus: 1 %}
-
-            {% assign value = count | modulo:2 %}
-            {% if   value == 0  %}
             <li>
-              <div class="custom-window-code my-custom-scrollbar bg-gray-lightest ">
+              <div class="tabs tabs-text">
 
-                {{module.content}}
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active">
+                    <a id="menu{{count}}" href="#title{{count}}" aria-controls="home1" role="tab" data-toggle="tab">{{module.title}}</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#readme{{count}}" aria-controls="settings1" role="tab" data-toggle="tab"> Readme</a>
+                  </li>
+                </ul>
 
-              </div>
+                <!-- Tab panes -->
+                <div class="tab-content" style="border: 2px solid #eceeef;">
+                  <div role="tabpanel" class="tab-pane active fade in" id="title{{count}}" style="padding: 15px">
+                          <p> {{ module.description }}<br><br>
+                            For more information:<a
+                              href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.title}}">
+                              here</a>
+                          </p>
+                    
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade my-custom-scrollbar bg-purple " id="readme{{count}}">
+                    
 
-            </li>
-            <li>
-              <h4 id="menu{{count}}">
-                {{module.title}} </h4>
-              <div>
-                <p> {{ module.description }}<br><br>
-                  For more information:<a
-                    href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.title}}">
-                    here</a>
-                </p>
-            </li>
+                      {{module.content}}
 
-            {% else %}
-
-            <li>
-              <h4 id="menu{{count}}">
-                {{module.title}} </h4>
-              <div>
-                <p> {{ module.description }}<br><br>
-                  For more information:<a
-                    href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.title}}">
-                    here</a>
-                </p>
-            </li>
-            <li>
-              <div class="custom-window-code my-custom-scrollbar bg-gray-lightest ">
-
-                {{module.content}}
+                  
+                  </div>
+                </div>
 
               </div>
 
 
+
+
             </li>
-
-            {% endif %}
-
             {% endif %}
             {% endfor %}
           </ul>
@@ -142,11 +134,11 @@
     </main>
     <!-- END Main container -->
   </div>
-    <!-- Site footer -->
-    {% include footer.html %}
-    <!-- END Site footer -->
+  <!-- Site footer -->
+  {% include footer.html %}
+  <!-- END Site footer -->
 
- 
+
   <!-- Scripts -->
   <script src="assets/js/app.min.js"></script>
   <script src="assets/js/custom.js"></script>
