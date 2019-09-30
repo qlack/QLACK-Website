@@ -5,8 +5,8 @@
   
   .bg-img-index-header {
     
-    // image with opacity 0.7
-    background-image: linear-gradient(rgba(1,30,47,0.5), rgba(255,255,255,0.5)), url(../img/index.jpg);
+   
+    background-image: linear-gradient(rgba(0, 0, 0,1) -10%, rgba(0,0,0,0.1)), url(../img/index.jpg);
   }
   
   .bg-img-page-fuse-header {
@@ -40,8 +40,9 @@
   }
   
   .btn-custom {
-    line-height: 25px;
-    padding: 0 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    text-transform: none;
   }
 
 .custom-window-code{

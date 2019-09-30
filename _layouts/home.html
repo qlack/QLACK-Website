@@ -4,11 +4,11 @@
 {% include head.html %}
 
 <body class="sticky-nav transparent-nav ">
-
-  <div class="main-container header-image bg-img-index-header overlay-black overlay-intense ">
+    <div id="particles-js"></div>
+  <div class="main-container header-image ">
     <!-- Site header -->
     <header class="site-header">
-
+       
       <!-- Logo & Navigation -->
       <nav class="site-navigation">
         <div class="container">
@@ -32,7 +32,7 @@
       <!-- END Logo & Navigation -->
 
       <!-- Header description -->
-      <div>
+      
 
         <div class="container">
           <h1><strong>{{page.title}}</strong></h1>
@@ -48,26 +48,25 @@
                       <div class="row">
                         <div class="col-sm-2">
                             <a class="btn btn-danger btn-custom" href="https://github.com/qlack/QLACK-Java"
-                            style="margin-right:12px;"><img src="assets/img/gitimg.png" alt="logo"></a>
+                             >View on GitHub<img src="assets/img/gitimg.png" alt="logo"></a>
                         </div>
                         <div class="col-sm-2">
                             <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=duplicated_lines_density">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=alert_status">      
+                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=ncloc">    
                         </div>
                         <div class="col-sm-2">
                             <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=code_smells">
                             <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=vulnerabilities">     
                         </div>  
                         <div class="col-sm-2">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=sqale_rating">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=ncloc">
-                        </div>  
-                        <div class="col-sm-2">
                             <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=sqale_index">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=coverage">
+                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=sqale_rating">     
                         </div>  
                         <div class="col-sm-2">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=reliability_rating">
+                          <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=coverage">
+                          <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=reliability_rating">
+                        </div>  
+                        <div class="col-sm-2">
                             <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=security_rating">
                             <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=bugs">
                         </div>  
@@ -91,8 +90,12 @@
 
   
   <!-- Scripts -->
+  <script src="assets/js/particles.js"></script>
   <script src="assets/js/app.min.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/configparticles.js"></script>
+  
+  
 
 </body>
 
