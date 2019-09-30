@@ -13068,7 +13068,7 @@ section {
 
 .site-footer {
   
-  background-color: #161b1f;
+  background-color: #00000096;
   padding: 10px 0;
   position: absolute;
   bottom: 0;
@@ -13095,6 +13095,7 @@ section {
 
 .footer-links {
   padding-left: 0;
+  margin-bottom:4px;
   list-style: none;
   li {
     display: inline-block;
@@ -13104,7 +13105,7 @@ section {
     margin-right: 16px;
     line-height: 34px;
     &:active, &:focus, &:hover {
-      color: #fff;
+      color: #f36;
       text-decoration: none;
     }
   }
@@ -13112,6 +13113,7 @@ section {
 
 .footer-socials {
   padding-left: 0;
+  margin-bottom:4px;
   list-style: none;
   text-align: right;
   a, li {
@@ -13193,7 +13195,7 @@ section {
     color: #606873;
     transition: all .2s linear;
     &:active, &:focus, &:hover {
-      color: #fff;
+      color: #f36;
       text-decoration: none;
     }
   }
