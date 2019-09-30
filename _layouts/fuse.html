@@ -5,16 +5,14 @@
 
 <body class="sticky-nav ">
 
-  <div class="main-container ">
+  <div class="main-container bg-dark-light">
     <!--  Navigation -->
     <nav class="page-navigation full-topbar">
       <ul class="nav">
         {% assign count = 0 %}
-        {%for module in site.modules %}
-        {% if module.category == 'fuse' %}
+        {%for module in site.data.modules.Fuse %}
         {% assign count = count | plus: 1 %}
         <li><a href="#menu{{count}}">{{module.title}}</a></li>
-        {% endif %}
         {% endfor %}
       </ul>
     </nav>
@@ -27,7 +25,7 @@
       <nav class="site-navigation">
         <div class="container">
           <div class="logo">
-            <a class="logo-default" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+            
             <a class="logo-transparent" href="index.html"><img src="assets/img/logo-alt.png" alt="logo"></a>
           </div>
 
@@ -70,61 +68,30 @@
     <!-- Main container -->
     <main>
 
-      {% assign count = 0 %}
-
       <!--  Section - Qlack Fuse -->
       <section>
+          {% assign count = 0 %}
         <div class="container">
-          <header class="section-header ">
+          <header class="section-header text-left">
             <span>
               <!--little description --></span>
 
             <h2>Qlack Fuse </h2>
             <p>Qlack Fuse has the following modules:</p>
           </header>
-          <ul class="step-text step-cols-2">
-            {%for module in site.modules %}
-            {% if module.category == 'fuse' %}
+          <ul class="faq-items">
+            {%for module in site.data.modules.Fuse %}
             {% assign count = count | plus: 1 %}
             <li>
-              <div class="tabs tabs-text">
-
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="active">
-                    <a id="menu{{count}}" href="#title{{count}}" aria-controls="home1" role="tab" data-toggle="tab">{{module.title}}</a>
-                  </li>
-                  <li role="presentation">
-                    <a href="#readme{{count}}" aria-controls="settings1" role="tab" data-toggle="tab"> Readme</a>
-                  </li>
-                </ul>
-
-                <!-- Tab panes -->
-                <div class="tab-content" style="border: 2px solid #eceeef;">
-                  <div role="tabpanel" class="tab-pane active fade in" id="title{{count}}" style="padding: 15px">
-                          <p> {{ module.description }}<br><br>
-                            For more information:<a
-                              href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.title}}">
-                              here</a>
-                          </p>
-                    
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade my-custom-scrollbar bg-purple " id="readme{{count}}">
-                    
-
-                      {{module.content}}
-
-                  
-                  </div>
-                </div>
-
-              </div>
-
-
-
-
+              <h4 id="menu{{count}}">
+                {{module.title}} </h4>
+              <div id="module{{count}}">
+                <p> {{ module.description }}<br><br>
+                  For more information:<a
+                    href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.title}}">
+                    here</a>
+                </p>
             </li>
-            {% endif %}
             {% endfor %}
           </ul>
         </div>

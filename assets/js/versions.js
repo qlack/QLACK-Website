@@ -17,7 +17,7 @@ xhr.onreadystatechange = function () {
         text += "  </header> </div> </section>";
       }
       else{
-        text+=  "<section class='no-border-bottom section-sm bg-gray-lighter'><div class='container'> <header class='section-header text-left'>";
+        text+=  "<section class='no-border-bottom section-sm '><div class='container'> <header class='section-header text-left'>";
         text += " <span>" + myObj[x].published_at.slice(0,10) + "</span>";
         text +=  "<h2>"+myObj[x].name+"</h2>"
         text +=  "<p class='version-body'>"+ myObj[x].body+"</p>"
