@@ -7,7 +7,7 @@
 
     <div id="particles-js"></div>
     
-  <div class="main-container header-image ">
+  <div class="homepage-container header-image ">
     <!-- Site header -->
     <header class="site-header">
        
@@ -38,39 +38,39 @@
 
         <div class="container">
           <h1><strong>{{page.title}}</strong></h1>
-          <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          <h5 class="home-description-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
             electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
             Aldus
             PageMaker including versions of Lorem Ipsum.</h5>
-          <br><br><br><br>
+  
                      
                       <div class="row">
-                        <div class="col-md-2 col-sm-12">
-                            <a class="btn btn-danger btn-custom" href="https://github.com/qlack/QLACK-Java"
-                             >View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+                        <div class="col-md-2 col-sm-12 ">
+                            <a class="btn btn-danger btn-custom " target="_noblank" href="https://github.com/qlack/QLACK-Java"
+                             ><span class="button-text">View on </span>GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
                         </div>
-                        <div class="col-md-2 col-sm-12">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=duplicated_lines_density" style="margin-bottom: 8px">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=ncloc">    
+                        <div class="col-md-2 col-sm-12 badges-margin badges-center" >
+                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=duplicated_lines_density" class="badges">
+                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=ncloc" class="badges">    
                         </div>
-                        <div class="col-md-2 col-sm-12">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=code_smells" style="margin-bottom: 8px">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=vulnerabilities">     
+                        <div class="col-md-2 col-sm-12 badges-center">
+                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=code_smells" class="badges">
+                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=vulnerabilities" class="badges">     
                         </div>  
-                        <div class="col-md-2 col-sm-12">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=sqale_index" style="margin-bottom: 8px">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=sqale_rating">     
+                        <div class="col-md-2 col-sm-12 badges-center">
+                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=sqale_index" class="badges">
+                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=sqale_rating" class="badges">     
                         </div>  
-                        <div class="col-md-2 col-sm-12">
-                          <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=coverage" style="margin-bottom: 8px">
-                          <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=reliability_rating">
+                        <div class="col-md-2 col-sm-12 badges-center">
+                          <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=coverage" class="badges">
+                          <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=reliability_rating" class="badges">
                         </div>  
-                        <div class="col-md-2 col-sm-12">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=security_rating" style="margin-bottom: 8px">
-                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=bugs">
+                        <div class="col-md-2 col-sm-12 badges-center">
+                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=security_rating" class="badges">
+                            <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=bugs" class="badges">
                         </div>  
                       </div>
                     
@@ -89,40 +89,28 @@
     <!-- Site footer with opacity 0.7 -->
        
      
-<footer  class="site-footer" style="opacity: 0.7">
-  <div class="container">
-      <div class="row">
 
-          <div class="col-md-8 col-sm-6 col-xs-12">
-              
-              <ul class="footer-links">
-                  <li><p class="copyright-text">&copy; Copyright  2019  <a href="https://www.eurodyn.com/">EUROPEAN DYNAMICS SA</a>
-                  </p></li>
-                  <li><a href="https://www.eurodyn.com/">About us</a></li>
-                  <li><a href="https://www.eurodyn.com/contact/">Contact us</a></li>
-              </ul>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="footer-socials">
-                  <li style="color: white">Follow us</li>
-                  <li><a class="twitter" href="https://twitter.com/EURODYN_Careers"><i class="fa fa-twitter"></i></a></li>
-                  <li><a class="linkedin" href="https://www.linkedin.com/company/european-dynamics/"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-          </div>
-
-      </div>
-
-  </div>
+    <footer  class="site-footer" style="opacity: 0.7">
+                 
+        <ul class="footer-links">
+            <li><p class="copyright-text"><i class="fa fa-copyright" aria-hidden="true"></i> 2019  <a href="https://www.eurodyn.com/">EUROPEAN DYNAMICS SA</a>
+            </p></li>
+            <li><a href="https://www.eurodyn.com/"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.eurodyn.com/contact/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/EURODYN_Careers"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/company/european-dynamics/"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
 
 </footer>
     <!-- END Site footer -->
 
+    <!--ScrollToTop button-->
+    <a href="javascript:" id="top"><i class="fa fa-chevron-up"></i></a>
   
   <!-- Scripts -->
   <script src="assets/js/particles.js"></script>
   <script src="assets/js/app.min.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/scrolltotop.js"></script>
   <script src="assets/js/configparticles.js"></script>
   
   

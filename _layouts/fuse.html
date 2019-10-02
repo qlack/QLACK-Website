@@ -3,9 +3,10 @@
 
 {% include head.html %}
 
-<body class="sticky-nav ">
-
+<body class="sticky-nav  ">
+  
   <div class="main-container bg-dark-light">
+      
     <!--  Navigation -->
     <nav class="page-navigation full-topbar">
       <ul class="nav">
@@ -85,12 +86,12 @@
             <li>
               <h4 id="menu{{count}}">
                 {{module.title}} </h4>
-              <div id="module{{count}}">
-                <p> {{ module.description }}<br><br>
-                  For more information:<a
+                <p>
+                 {{ module.description }}<br><br>
+                  <a target="_noblank"
                     href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.title}}">
-                    here</a>
-                </p>
+                    Visit the <i class="fa fa-github" aria-hidden="true"></i> repo for more information</a>
+                  </p>
             </li>
             {% endfor %}
           </ul>
@@ -105,10 +106,12 @@
   {% include footer.html %}
   <!-- END Site footer -->
 
-
+  <!--ScrollToTop button-->
+  <a href="javascript:" id="top"><i class="fa fa-chevron-up"></i></a>
   <!-- Scripts -->
   <script src="assets/js/app.min.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/scrolltotop.js"></script>
+  
 
 </body>
 

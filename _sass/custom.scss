@@ -11,7 +11,7 @@
   
   .bg-img-page-fuse-header {
     
-    background-image: linear-gradient(rgba(1,30,47,0.3), rgba(255,255,255,0.3)), url(../img/fuse.jpg);
+    background-image: linear-gradient(rgba(1,30,47,0.2), rgba(255,255,255,0.2)), url(../img/fuse.jpg);
   }
   .bg-img-page-util-header {
     background-image: linear-gradient(rgba(1,30,47,0.5), rgba(255,255,255,0.5)),  url(../img/util.jpg);
@@ -35,35 +35,102 @@
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 200px; /* height of your footer */
+    padding-bottom: 35px; /* height of  footer */
+
+  }
+
+  .homepage-container{
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 180px; /* height of  footer */
 
   }
   
   .btn-custom {
     line-height: 40px;
-    padding: 10px 0;
     padding-bottom: 4px;
     padding-top: 3px;
-    padding-left: 10px ;
+    padding-left: 12px ;
     padding-right: 6px ;
-
     text-transform: none;
   }
-
-.custom-window-code{
-  border: 1px solid #eceeef;
-  border-radius: 3px;
-  margin: 15px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-  display: block;
-
-}
-
-.my-custom-scrollbar {
-  position: relative;
-  height: 400px;
-  overflow: auto;
+  
+  .badges {
+    margin-bottom: 8px;
+  }
+ 
+  .home-description-margin{
+    margin-bottom: 96px;
   }
 
+
+  #top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  
+    i {
+      color: #32333a;
+      margin: 0;
+      position: relative;
+      left: 16px;
+      top: 13px;
+      font-size: 19px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+  
+    &:hover {
+      background: #fff;
+  
+      i {
+        color: #32333a;
+        top: 5px;
+      }
+    }
+  }
+  
+  
+
+
+  @media (max-width: 992px) {
+
+    .badges-margin{
+      margin-top:12px!important;
+    }
+    .badges-center {
+      text-align: center;
+    }
+    .main-container{
+      padding-bottom: 100px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width:1200px) {
+
+    .button-text{
+      display: none;
+    }
+  }
 
  
