@@ -12399,7 +12399,7 @@ section {
 }
 
 .site-navigation {
-  background-color: #32333a;
+  background-color: #161b1f;
   position: relative;
   z-index: 10;
   transition: background-color .3s ease-out;
@@ -12727,7 +12727,7 @@ section {
 @media (min-width: 992px) {
   .page-navigation.full-topbar {
     padding: 0 15px;
-    background-color: #f36;
+    background-color: rgb(43, 9, 9);
     height: 40px;
     overflow: hidden;
     position: fixed;

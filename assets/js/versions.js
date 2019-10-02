@@ -18,7 +18,6 @@ xhr.onreadystatechange = function () {
    }
     
     document.getElementById("versions").innerHTML = text;
-    document.getElementById("whitespace").style.display = "none";
    
     
   }
