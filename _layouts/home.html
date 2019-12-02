@@ -1,39 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: wrapper
+---
 
-{% include head.html %}
-
-<body class="sticky-nav transparent-nav ">
-
-    <div id="particles-js"></div>
-    
-  <div class="homepage-container header-image ">
     <!-- Site header -->
     <header class="site-header">
        
       <!-- Logo & Navigation -->
-      {% include top-navigation.html %}
+      {% include top-navigation.html activeIndex="active" %}
       <!-- END Logo & Navigation -->
 
       <!-- Header description -->
       
 
         <div class="container">
-          <img src="assets/img/qlack_ecosystem.png">
-          <h5 class="home-description-margin" style="min-height: 30rem !important">
-            QLACK is an ecosystem of software development libraries and utilities, targeting Java and Angular
-            developers. Our goal while developing QLACK is not to create a framework but to bundle
-            together functionality we often use in projects under a common roof.
-            <br><br>
-            QLACK has a rich history as in one form or another has been in development for more than
-            10 years. It initially started as QLACK 1 based on Enterprise Java Beans technology, it
-            continued with QLACK 2 based on OSGi, and currently on version 3 is based on Spring Boot.
-            <br><br>
-            Using QLACK you can accelerate your Spring Boot-based development as a considerable
-            amount of boilerplate code is already provided via QLACK's rich modules ecosystem and APIs.
-            <br><br>
-            QLACK is an Open Source project under EUPL.
-          </h5>
+          <h1><strong>{{page.title}}</strong></h1>
+          <h5 class="home-description-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus
+            PageMaker including versions of Lorem Ipsum.</h5>
   
                      
                       <div class="row">
@@ -74,36 +61,4 @@
 
     </main>
     <!-- END Main container -->
-  </div>
-    <!-- Site footer with opacity 0.7 -->
-       
-     
 
-    <footer  class="site-footer" style="opacity: 0.7">
-                 
-        <ul class="footer-links">
-            <li><p class="copyright-text"><i class="fa fa-copyright" aria-hidden="true"></i> 2019  <a href="https://www.eurodyn.com/">EUROPEAN DYNAMICS SA</a>
-            </p></li>
-            <li><a href="https://www.eurodyn.com/"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.eurodyn.com/contact/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-            <li><a class="twitter" href="https://twitter.com/EURODYN_Careers"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="linkedin" href="https://www.linkedin.com/company/european-dynamics/"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-
-</footer>
-    <!-- END Site footer -->
-
-    <!--ScrollToTop button-->
-    <a href="javascript:" id="top"><i class="fa fa-chevron-up"></i></a>
-  
-  <!-- Scripts -->
-  <script src="assets/js/particles.js"></script>
-  <script src="assets/js/app.min.js"></script>
-  <script src="assets/js/scrolltotop.js"></script>
-  <script src="assets/js/configparticles.js"></script>
-  
-  
-
-</body>
-
-</html>

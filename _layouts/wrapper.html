@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+{% if page.title == "Qlack" %}
+
+<body class="sticky-nav  transparent-nav ">
+
+    <div id="particles-js"></div>
+
+<div class="homepage-container header-image ">
+        {% else %}
+
+<body class="sticky-nav">
+
+<div class="main-container bg-dark-light">
+            {% endif %}
+
+            <!-- The content of The the page -->
+            {{content}}
+
+</div>
+    {% if page.title == "Qlack" %}
+    <!-- Site footer -->
+    {% include footer.html opacity="0.7"  %}
+    <!-- END Site footer -->
+    <!--ScrollToTop button-->
+    <a href="javascript:" id="top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/scrolltotop.js"></script>
+    <script src="assets/js/configparticles.js"></script>
+    {% else %}
+    <!-- Site footer -->
+    {% include footer.html opacity="1"  %}
+    <!-- END Site footer -->
+
+    <!--ScrollToTop button-->
+    <a href="javascript:" id="top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Scripts -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/scrolltotop.js"></script>
+    {% endif %}
+
+</body>
+
+</html>

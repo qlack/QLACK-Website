@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-{% include head.html %}
-
-<body class="sticky-nav  ">
+---
+layout: wrapper
+---
 
 <div class="main-container bg-dark-light">
 
@@ -14,7 +11,7 @@
       {%for module in site.data.modules.Fuse %}
       {% assign count = count | plus: 1 %}
       <li>
-        <a href="#menu{{count}}">{{module.title}}</a>
+        <a href="#menu{{count}}">{{module.subtitle}}</a>
       </li>
       {% endfor %}
     </ul>
@@ -25,12 +22,12 @@
   <header class="site-header">
 
     <!-- Logo & Navigation -->
-    {% include top-navigation.html %}
+    {% include top-navigation.html activeFuse="active" %}
     <!-- END Logo & Navigation -->
 
     <!-- Header image -->
-    <div class="header-image bg-img-page-fuse-header  overlay-black overlay-pale no-padding">
-      <div class="container" style="padding: 14rem 0">
+    <div class="header-image bg-img-page-fuse-header  overlay-black overlay-pale">
+      <div class="container" >
         <h1>
           <strong>FUSE</strong>
         </h1>
@@ -70,11 +67,11 @@
                 <span class="button-text">View on GitHub</span>
               </a>
               <a class="btn btn-dark" target="_noblank"
-                 href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.github}}">
+                 href="https://search.maven.org/artifact/com.eurodyn.qlack.fuse/qlack-fuse-{{module.maven}}">
                 <span class="button-text">View on Maven</span>
               </a>
               <a class="btn btn-dark" target="_noblank"
-                 href="https://www.javadoc.io/doc/com.eurodyn.qlack.fuse/qlack-fuse-aaa">
+                 href="https://www.javadoc.io/doc/com.eurodyn.qlack.fuse/qlack-fuse-{{module.javadoc}}">
                 <span class="button-text">View Javadoc</span>
               </a>
 
@@ -89,20 +86,5 @@
 
   </main>
   <!-- END Main container -->
-</div>
-<!-- Site footer -->
-{% include footer.html %}
-<!-- END Site footer -->
-
-<!--ScrollToTop button-->
-<a href="javascript:" id="top">
-  <i class="fa fa-chevron-up"></i>
-</a>
-<!-- Scripts -->
-<script src="assets/js/app.min.js"></script>
-<script src="assets/js/scrolltotop.js"></script>
 
 
-</body>
-
-</html>

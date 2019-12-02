@@ -8,13 +8,12 @@
     <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="fa fa-bars"></i></a>
 
     <ul class="nav-menu">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="fuse">FUSE</a></li>
-      <li><a href="util">UTIL & TOOLS</a></li>
-      <li><a href="angular">ANGULAR</a></li>
-      <li><a href="webdesktop">WEBDESKTOP</a></li>
-      <li><a href="getting-started">GETTING STARTED</a></li>
-      <li><a href="versions">VERSIONS</a></li>
+      <li><a href="index.html" class="{{ include.activeIndex }}">HOME</a></li>
+      <li><a href="fuse" class="{{ include.activeFuse }}">FUSE</a></li>
+      <li><a href="util-tools" class="{{ include.activeUtilTools }}">UTIL & TOOLS</a></li>
+      <li><a href="angular" class="{{ include.activeAngular }}">ANGULAR</a></li>
+      <li><a href="webdesktop" class="{{ include.activeWebdesktop }}">WEBDESKTOP</a></li>
+      <li><a href="getting-started" class="{{ include.activeGettingStarted }}">GETTING STARTED</a></li>
     </ul>
   </div>
 </nav>

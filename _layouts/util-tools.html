@@ -1,0 +1,125 @@
+---
+layout: wrapper
+---
+    <!--  Navigation -->
+    <nav class="page-navigation full-topbar">
+      <ul class="nav">
+        {% assign count = 0 %}
+        {%for module in site.data.modules.Util %}
+        {% assign count = count | plus: 1 %}
+        <li><a href="#menu{{count}}">{{module.subtitle}}</a></li>
+        {% endfor %}
+        {%for module in site.data.modules.Tools %}
+        {% assign count = count | plus: 1 %}
+        <li><a href="#menu{{count}}">{{module.subtitle}}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <!-- END Navigation -->
+
+    <!-- Site header -->
+    <header class="site-header">
+
+      <!-- Logo & Navigation -->
+      {% include top-navigation.html activeUtilTools="active" %}
+      <!-- END Logo & Navigation -->
+
+      <!-- Header image -->
+      <div class="header-image bg-img-page-util-header overlay-black overlay-pale">
+        <div class="container">        
+          <h1><strong>UTIL & TOOLS</strong></h1>
+          <h4>QLACK Util & Tools is a set of utility library and tools helping you with your everyday
+          development tasks. In contrast to QLACK Fuse modules, Util & Tools components do not need
+          to store data, so they do not need to integrate with your project's database schema.
+          </h4>
+        </div>
+      </div>
+      <!-- END Header image -->
+
+      <!-- END Site header -->
+
+
+      <!-- Main container -->
+      <main>
+
+
+        <!-- Section - Qlack Util -->
+        <section>
+          {% assign count = 0 %}
+          <div class="container">
+            <header class="section-header text-left ">
+              <span>
+                <!--little description --></span>
+
+              <h2>Qlack Util</h2>
+              <p>Qlack Util has the following modules:</p>
+
+            </header>
+
+            <ul class="faq-items">
+              {%for module in site.data.modules.Util %}
+              {% assign count = count | plus: 1 %}
+              <li>
+                <h4 id="menu{{count}}">
+                  {{module.title}} </h4>
+                <p>
+                  {{ module.description }}
+                  <br>
+                  <br>
+
+                  <a class="btn btn-dark" target="_noblank"
+                     href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Util/qlack-util-{{module.github}}">
+                    <span class="button-text">View on GitHub</span>
+                  </a>
+                  <a class="btn btn-dark" target="_noblank"
+                     href="https://search.maven.org/artifact/com.eurodyn.qlack.util/qlack-util-{{module.maven}}">
+                    <span class="button-text">View on Maven</span>
+                  </a>
+                  <a class="btn btn-dark" target="_noblank"
+                     href="https://www.javadoc.io/doc/com.eurodyn.qlack.util/qlack-util-{{module.javadoc}}">
+                    <span class="button-text">View Javadoc</span>
+                  </a>
+
+
+                </p>
+
+              </li>
+              {% endfor %}
+
+              {%for module in site.data.modules.Tools %}
+              {% assign count = count | plus: 1 %}
+              <li>
+                <h4 id="menu{{count}}">
+                  {{module.title}} </h4>
+                <p>
+                  {{ module.description }}
+                  <br>
+                  <br>
+
+                  <a class="btn btn-dark" target="_noblank"
+                     href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Tools/qlack-tools-{{module.github}}">
+                    <span class="button-text">View on GitHub</span>
+                  </a>
+                  <a class="btn btn-dark" target="_noblank"
+                     href="https://search.maven.org/artifact/com.eurodyn.qlack.tools/qlack-tools-{{module.maven}}">
+                    <span class="button-text">View on Maven</span>
+                  </a>
+                  <a class="btn btn-dark" target="_noblank"
+                     href="https://www.javadoc.io/doc/com.eurodyn.qlack.tools/qlack-tools-{{module.javadoc}}">
+                    <span class="button-text">View Javadoc</span>
+                  </a>
+
+
+                </p>
+
+              </li>
+              {% endfor %}
+            </ul>
+
+          </div>
+        </section>
+
+        <!-- END Section - Qlack Util -->
+
+      </main>
+      <!-- END Main container -->

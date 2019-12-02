@@ -6,6 +6,7 @@ Fuse:
     github: aaa
     maven: aaa
     javadoc: aaa
+    subtitle: aaa
     title: AAA - Authentication, Authorisation, and Accounting (AAA) module
     description:  The AAA module provides user account
       management services. It allows you to manage your application users, create groups,
@@ -17,17 +18,26 @@ Fuse:
     github: acv
     maven: acv
     javadoc: acv
+    subtitle: acv
     title: ACV - Object Auditing, Comparison, and Versioning module
     description:  The ACV module allows you to audit objects for changes, compare objects to discover
       services and version objects to audit changes.
 
   - audit:
+    github: audit
+    maven: audit
+    javadoc: audit
+    subtitle: audit
     title: Audit module
     description:  The Audit module allows to maintain an application audit. You can define your own
                   audit level and record actions taking place in your back-end together with additional
                   information such as before/after object states.
 
   - content-manager:
+    github: content-manager
+    maven: content-manager
+    javadoc: content-manager
+    subtitle: content-manager
     title: Content manager module
     description:  The Content manager module allows you to organise and maintain a content repository.
                   Content entries can be in any form, binary or text, and a rich API is provided to
@@ -36,6 +46,10 @@ Fuse:
                   in the filesystem.
 
   - crypto:
+    github: crypto
+    maven: crypto
+    javadoc: crypto
+    subtitle: crypto
     title: Crypto module
     description:  The Crypto modules provides an easy to understand API around commonly used
                   cryptoraphy-related functionality. Crypto module does not implement itself
@@ -45,6 +59,10 @@ Fuse:
                   validation, Certificate Authority management, and Keystore management.
 
   - fileupload:
+    github: fileupload
+    maven: fileupload
+    javadoc: fileupload
+    subtitle: fileupload
     title: File upload module
     description:  The File upload module enhances the regular form-based file upload mechanism with
                   out of bound, asynchronous, incremental file uploading functionality. With the
@@ -53,6 +71,10 @@ Fuse:
                   having to re-upload chunks previously uploaded.
 
   - imaging:
+    github: imaging
+    maven: imaging
+    javadoc: imaging
+    subtitle: imaging
     title: Imaging module
     description:  The Imaging module allows to efficiently perform various image manipulation functions
                   in a variety of image formats. You can resample images to change the resolution,
@@ -60,6 +82,10 @@ Fuse:
                   remove transparency, as well as generate QR Codes.
 
   - lexicon:
+    github: lexicon
+    maven: lexicon
+    javadoc: lexicon
+    subtitle: lexicon
     title: Lexicon module
     description:  The Lexicon module allows you to quickly and efficiently maintain multilingual
                   applications. All translations are kept in database tables and can be grouped
@@ -70,6 +96,10 @@ Fuse:
                   and later on re-imported from MS Excel back to the Lexicon module.
 
   - mailing:
+    github: mailing
+    maven: mailing
+    javadoc: mailing
+    subtitle: mailing
     title: Mailing moduile
     description:  the Mailing module provides management services for electronic mail. It allows you
                   to create outgoing emails and keeps track of when an email was sent, the content
@@ -79,6 +109,10 @@ Fuse:
                   with the remote mail server.
 
   - rules:
+    github: rules
+    maven: rules
+    javadoc: rules
+    subtitle: rules
     title: Rules module
     description:  The Rules module provides a comprehensive, easy to understand wrapping API over the
                   industry-standard <a href="https://www.drools.org/" target="_blank">Drools</a> library. By using the Rules module you can start using and
@@ -86,6 +120,10 @@ Fuse:
                   API of Drools.
 
   - scheduler:
+    github: scheduler
+    maven: scheduler
+    javadoc: scheduler
+    subtitle: scheduler
     title: Scheduler module
     description:  The Scheduler module seamlessly integrates <a href="http://www.quartz-scheduler.org/" target="_blank">
                   Quartz</a> job scheduler into your Spring Boot application. It provides a simplified
@@ -93,6 +131,10 @@ Fuse:
                   tables into your application's database schema.
 
   - search:
+    github: search
+    maven: search
+    javadoc: search
+    subtitle: search
     title: Search module
     description:  The Search module provides a production-ready, simplified API over
                   <a href="https://www.elastic.co/">Elasticsearch</a>. Using the Search module you
@@ -100,12 +142,20 @@ Fuse:
                   exposed to the internal mechanisms of Elasticsearch.
 
   - security:
+    github: security
+    maven: security
+    javadoc: security
+    subtitle: security
     title: Security module
     description:  The Security module allows you to quickly integrate Spring Security with JSON
                   Web Tokens (JWT). It provides functionality to create JWTs as well as validate
                   JWTs on incoming requests.
 
   - settings:
+    github: settings
+    maven: settings
+    javadoc: settings
+    subtitle: settings
     title: Settings module
     description:  This Settings module allows you to maintain application and user-specific settings
                   in your application. Application settings can be used for dynamically configuring
@@ -113,11 +163,19 @@ Fuse:
                   your users with a personalised experience of their preferences.
 
   - token-server:
+    github: token-server
+    maven: token-server
+    javadoc: token-server
+    subtitle: token-server
     title: Token server module
     description:  The Token server module provides generation and management of arbitrary tokens.
                   Tokens are stored in database tables and can be associated with expiration dates.
 
   - workflow:
+    github: workflow
+    maven: workflow
+    javadoc: workflow
+    subtitle: workflow
     title: Workflow module
     description:  The Workflow module integrates with <a href="https://www.activiti.org/">Activity</a>
                   business automation service allowing you to quickly deploy, execute and manage
@@ -130,59 +188,106 @@ Fuse:
 Util:
 
   - av-api:
+    github: av-api
+    maven: av-api
+    javadoc: av-api
+    subtitle: av-api
     title: AV API component
     description:  The AntiVirus API provides a generic interface, so that product-specific anti-virus
                   implementations can be plugged into your QLACK-based project.
 
   - clam-av:
+    github: clam-av
+    maven: clam-av
+    javadoc: clam-av
+    subtitle: clam-av
     title: Clam AV component
     description:  An implementation of the AV API for Clam AV antivirus.
 
   - data-mongo:
+    github: data-mongo
+    maven: data-mongo
+    javadoc: data-mongo
+    subtitle: data-mongo
     title: Data MongoDB component
     description:  Provides a Spring Boot compatible implementation layer for storing large files in
                   MongoDB using the GridFS.
 
   - data:
+    github: data
+    maven: data
+    javadoc: data
+    subtitle: data
     title: Data component
     description: The Data component provides several utility functions to work with data such as
                  annotation-based encryption/decryption, data filtering on JSON objects (useful to
                  filter sensitive data in your REST endpoints), UTC to/from Instant Jackson serialisers, etc.
 
   - documentation:
+    github: documentation
+    maven: documentation
+    javadoc: documentation
+    subtitle: documentation
     title: Documentation component
     description:  The documentation component allows you to quickly generate application documentation
                   based on your Javadoc using Enunciate Swagger-UI libraries.
 
   - fileutils:
+    github: fileutils
+    maven: fileutils
+    javadoc: fileutils
+    subtitle: fileutils
     title: File utils component
     description:  The file util component provides you functionality to work with files, currently
                   supporting stream-based compression & decompression utilities.
 
   - hibernate:
+    github: hibernate
+    maven: hibernate
+    javadoc: hibernate
+    subtitle: hibernate
     title: Hibernate component
     description:  Provides additional Hibernate dialect stubs for working with UTF-8 data.
 
   - jwt:
+    github: jwt
+    maven: jwt
+    javadoc: jwt
+    subtitle: jwt
     title: JWT component
     description: Provides functionality working with JSON Web Tokens, such as creating JWTs and
                  manipulating claims.
 
-  - liquibase:
-    title: Liquibase component
-    description: Automatic capturing of database schema changes to Liquibase files. Using this tool
-                 you can evolve your database schema using your favourite database tool and then
-                 have all your changes automatically being captured to Liquibase files to be replayed
-                 in other environments.
-
   - logger:
+    github: logger
+    maven: logger
+    javadoc: logger
+    subtitle: logger
     title: Logger component
     description: Annotation-based method execution logging for debugging. Using a single annotation
                  you can see in your logs which methods are executed, which parameters have been
                  passed, as well as the overall execution time.
 
   - querydsl:
+    github: querydsl
+    maven: querydsl
+    javadoc: querydsl
+    subtitle: querydsl
     title: QueryDSL component
     description: Annotation-based checks for empty QueryDSL predicates. When using QueryDSL for your
                  REST endpoints this utility component makes sure that empty predicates do not
                  produce an error.
+######################## Qlack Tools ##############################################
+###################################################################################
+Tools:
+
+  - liquibase:
+    github: liquibase
+    maven: liquibase
+    javadoc: liquibase
+    subtitle: liquibase
+    title: Liquibase component
+    description: Automatic capturing of database schema changes to Liquibase files. Using this tool
+                 you can evolve your database schema using your favourite database tool and then
+                 have all your changes automatically being captured to Liquibase files to be replayed
+                 in other environments.
