@@ -2,7 +2,7 @@
 title: Qlack
 
 
-baseurl: "/QLACK-website" 
+baseurl: "/QLACK-website"
 url: "https://qlack.github.io"
 
 markdown: kramdown

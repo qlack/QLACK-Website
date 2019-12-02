@@ -4,114 +4,104 @@
 {% include head.html %}
 
 <body class="sticky-nav  ">
-  
-  <div class="main-container bg-dark-light">
-      
-    <!--  Navigation -->
-    <nav class="page-navigation full-topbar">
-      <ul class="nav">
-        {% assign count = 0 %}
-        {%for module in site.data.modules.Fuse %}
-        {% assign count = count | plus: 1 %}
-        <li><a href="#menu{{count}}">{{module.title}}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-    <!-- END Navigation -->
 
-    <!-- Site header -->
-    <header class="site-header">
+<div class="main-container bg-dark-light">
 
-      <!-- Logo & Navigation -->
-      <nav class="site-navigation">
-        <div class="container">
-          <div class="logo">
-            
-            <a class="logo-transparent" href="index.html"><img src="assets/img/logo-alt.png" alt="logo"></a>
-          </div>
+  <!--  Navigation -->
+  <nav class="page-navigation full-topbar">
+    <ul class="nav">
+      {% assign count = 0 %}
+      {%for module in site.data.modules.Fuse %}
+      {% assign count = count | plus: 1 %}
+      <li>
+        <a href="#menu{{count}}">{{module.title}}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <!-- END Navigation -->
 
-          <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="fa fa-bars"></i></a>
+  <!-- Site header -->
+  <header class="site-header">
 
-          <ul class="nav-menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a class="active" href="fuse">FUSE</a></li>
-            <li><a href="util">UTIL</a></li>
-            <li><a href="tools">TOOLS</a></li>
-            <li><a href="webdesktop">WEBDESKTOP</a></li>
-            <li><a href="versions">VERSIONS</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- END Logo & Navigation -->
+    <!-- Logo & Navigation -->
+    {% include top-navigation.html %}
+    <!-- END Logo & Navigation -->
 
-      <!-- Header image -->
-      <div class="header-image bg-img-page-fuse-header  overlay-black overlay-pale no-padding">
-
-        <div class="container">
-
-          <br><br><br>
-          <h1><strong>FUSE</strong></h1>
-          <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus
-            PageMaker including versions of Lorem Ipsum.</h4>
-          <br><br><br>
-        </div>
+    <!-- Header image -->
+    <div class="header-image bg-img-page-fuse-header  overlay-black overlay-pale no-padding">
+      <div class="container" style="padding: 14rem 0">
+        <h1>
+          <strong>FUSE</strong>
+        </h1>
+        <h4>QLACK Fuse is a set of 15+ server-side, Spring Boot libraries assisting
+          you in everyday development tasks such as user management, audit log management,
+          cryptography,
+          image manipulation, multilingualism handling, preferences mangemenet, etc.</h4>
       </div>
-      <!-- END Header image -->
+    </div>
+    <!-- END Header image -->
 
-    </header>
-    <!-- END Site header -->
+  </header>
+  <!-- END Site header -->
 
-    <!-- Main container -->
-    <main>
+  <!-- Main container -->
+  <main>
 
-      <!--  Section - Qlack Fuse -->
-      <section>
-          {% assign count = 0 %}
-        <div class="container">
-          <header class="section-header text-left">
-            <span>
-              <!--little description --></span>
+    <!--  Section - Qlack Fuse -->
+    <section>
+      {% assign count = 0 %}
+      <div class="container">
+        <header class="section-header text-left">
+          <h2>Qlack Fuse </h2>
+        </header>
+        <ul class="faq-items">
+          {%for module in site.data.modules.Fuse %}
+          {% assign count = count | plus: 1 %}
+          <li>
+            <h4 id="menu{{count}}">
+              {{module.title}} </h4>
+            <p>
+              {{ module.description }}
+              <br>
+              <br>
+              <a class="btn btn-dark" target="_noblank"
+                 href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.github}}">
+                <span class="button-text">View on GitHub</span>
+              </a>
+              <a class="btn btn-dark" target="_noblank"
+                 href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.github}}">
+                <span class="button-text">View on Maven</span>
+              </a>
+              <a class="btn btn-dark" target="_noblank"
+                 href="https://www.javadoc.io/doc/com.eurodyn.qlack.fuse/qlack-fuse-aaa">
+                <span class="button-text">View Javadoc</span>
+              </a>
 
-            <h2>Qlack Fuse </h2>
-            <p>Qlack Fuse has the following modules:</p>
-          </header>
-          <ul class="faq-items">
-            {%for module in site.data.modules.Fuse %}
-            {% assign count = count | plus: 1 %}
-            <li>
-              <h4 id="menu{{count}}">
-                {{module.title}} </h4>
-                <p>
-                 {{ module.description }}<br><br>
-                  <a target="_noblank"
-                    href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.title}}">
-                    Visit the <i class="fa fa-github" aria-hidden="true"></i> repo for more information</a>
-                  </p>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </section>
-      <!-- END Section - Qlack Fuse -->
 
-    </main>
-    <!-- END Main container -->
-  </div>
-  <!-- Site footer -->
-  {% include footer.html %}
-  <!-- END Site footer -->
+            </p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+    <!-- END Section - Qlack Fuse -->
 
-  <!--ScrollToTop button-->
-  <a href="javascript:" id="top"><i class="fa fa-chevron-up"></i></a>
-  <!-- Scripts -->
-  <script src="assets/js/app.min.js"></script>
-  <script src="assets/js/scrolltotop.js"></script>
-  
+  </main>
+  <!-- END Main container -->
+</div>
+<!-- Site footer -->
+{% include footer.html %}
+<!-- END Site footer -->
+
+<!--ScrollToTop button-->
+<a href="javascript:" id="top">
+  <i class="fa fa-chevron-up"></i>
+</a>
+<!-- Scripts -->
+<script src="assets/js/app.min.js"></script>
+<script src="assets/js/scrolltotop.js"></script>
+
 
 </body>
 
