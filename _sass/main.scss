@@ -12260,7 +12260,7 @@ section {
     background-color: rgba(0, 0, 0, 0.5);
   }
   &.overlay-intense:before {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
   }
   &.overlay-pale:before {
     background-color: rgba(0, 0, 0, 0.4);
@@ -12340,8 +12340,10 @@ section {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
-  padding: 14rem 0;
+  padding: 10rem 0rem 20rem 0rem;
   color: #fff;
+  min-height: 500px;
+  max-height: 500px;
   z-index: 0;
   &.bg-repeat {
     background-size: none;
@@ -12382,6 +12384,7 @@ section {
 @media (max-width: 767px) {
   .header-image {
     padding: 120px 0 80px;
+    max-height: 2000px;
     h1 {
       font-size: 28px;
       line-height: 40px;
@@ -12518,7 +12521,7 @@ section {
 }
 
 .offcanvas-show .navbar-toggle {
-  color:  #f36;
+  color: #F0611E;
 }
 
 .sticky-nav {
@@ -12961,7 +12964,7 @@ section {
 @media (max-width: 991px) {
   .page-navigation {
     padding: 0 15px;
-    background-color: #2b0909;
+    background-color: #072533;
     position: fixed;
     top: 0;
     left: 0;

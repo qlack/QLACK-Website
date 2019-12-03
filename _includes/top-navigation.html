@@ -1,7 +1,9 @@
 <nav class="site-navigation">
   <div class="container">
     <div class="logo">
-
+      {% if page.title == "Qlack" %}
+      <a class="logo-default" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+      {% endif %}
       <a class="logo-transparent" href="index.html"><img src="assets/img/logo-alt.png" alt="logo"></a>
     </div>
 
