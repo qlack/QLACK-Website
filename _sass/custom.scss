@@ -129,7 +129,7 @@
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
 
   .badges-margin {
     margin-top: 12px !important;
@@ -138,11 +138,4 @@
     text-align: center;
   }
 
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-
-  .button-text {
-    display: none;
-  }
 }

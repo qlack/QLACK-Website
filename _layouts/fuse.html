@@ -33,6 +33,30 @@ layout: wrapper
           cryptography,
           image manipulation, multilingualism handling, preferences mangemenet, etc.
         </h4>
+        <br>
+          <div class="row">
+                      
+            <div class="col-md-2 col-sm-12  component-center" >
+                <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=duplicated_lines_density" class="badges">
+                <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=ncloc" class="badges">    
+            </div>
+            <div class="col-md-2 col-sm-12 component-center">
+                <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=code_smells" class="badges">
+                <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=vulnerabilities" class="badges">     
+            </div>  
+            <div class="col-md-2 col-sm-12 component-center">
+                <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=sqale_index" class="badges">
+                <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=sqale_rating" class="badges">     
+            </div>  
+            <div class="col-md-2 col-sm-12 component-center">
+              <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=coverage" class="badges">
+              <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=reliability_rating" class="badges">
+            </div>  
+            <div class="col-md-2 col-sm-12 component-center">
+                <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=security_rating" class="badges">
+                <img src="https://sonarcloud.io/api/project_badges/measure?project=com.eurodyn.qlack%3Aqlack&metric=bugs" class="badges">
+            </div>  
+          </div>
       </div>
     </div>
     <!-- END Header image -->
@@ -48,7 +72,7 @@ layout: wrapper
       {% assign count = 0 %}
       <div class="container">
         <header class="section-header text-left">
-          <h2>Qlack Fuse </h2>
+          <h2> Fuse </h2>
         </header>
         <ul class="faq-items">
           {%for module in site.data.modules.Fuse %}

@@ -12340,7 +12340,7 @@ section {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
-  padding: 10rem 0rem 20rem 0rem;
+  padding: 8rem 0rem 20rem 0rem;
   color: #fff;
   min-height: 500px;
   max-height: 500px;
@@ -12381,7 +12381,7 @@ section {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .header-image {
     padding: 120px 0 80px;
     max-height: 2000px;

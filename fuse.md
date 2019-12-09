@@ -1,4 +1,4 @@
 ---
 layout: fuse    
-title: Qlack-Fuse                    
+title: QLACK-Fuse                    
 ---

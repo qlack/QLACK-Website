@@ -1,4 +1,4 @@
 ---
 layout: angular
-title: Angular
+title: QLACK-Angular
 ---

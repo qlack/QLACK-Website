@@ -1,4 +1,4 @@
 ---
 layout: webdesktop
-title: Qlack-WebDesktop
+title: QLACK-WebDesktop
 ---

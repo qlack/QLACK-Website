@@ -1,4 +1,4 @@
 ---
 layout: getting-started
-title: Getting-started
+title: QLACK-Getting-Started
 ---
