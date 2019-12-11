@@ -10,13 +10,14 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
+   margin-right: calc(-1 * (100vw - 100%));
 }
 
 body {
   margin: 0;
   position: relative;
   height: 100%;
-  
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
@@ -12405,6 +12406,7 @@ section {
   background-color: #161b1f;
   position: relative;
   z-index: 10;
+  margin-right: calc(-1 * (100vw - 100%));
   transition: background-color .3s ease-out;
   .container-fluid .navbar-toggle, .container .navbar-toggle {
     margin-right: 0;
