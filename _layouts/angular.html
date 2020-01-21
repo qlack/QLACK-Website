@@ -4,28 +4,63 @@ layout: wrapper
 <!-- Site header -->
 <header class="site-header">
 
-    <!-- Logo & Navigation -->
-    {% include top-navigation.html activeAngular="active" %}
-    <!-- END Logo & Navigation -->
-    <!-- Header image -->
-    <div class="header-image bg-img-page-angular-header overlay-black overlay-intense">
-        <div class="container">
-            <h1><strong>ANGULAR</strong></h1>
-            <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
-
-            </h4>
-        </div>
+  <!-- Logo & Navigation -->
+  {% include top-navigation.html activeAngular="active" %}
+  <!-- END Logo & Navigation -->
+  <!-- Header image -->
+  <div class="header-image bg-img-page-angular-header overlay-black overlay-intense">
+    <div class="container">
+      <h1>
+        <strong>ANGULAR</strong>
+      </h1>
+      <h4>QLACK provides libraries for your Angular based application to facilitate everyday
+        tasks in your SPA development. Tasks such as automatic mapping of backend data
+        validation error messages to your reactive forms, or inter-application communication
+        via a PubSub framework are provided via QLACK Angular.
+      </h4>
     </div>
-    <!-- END Header image -->
+  </div>
+  <!-- END Header image -->
 </header>
 <!-- END Site header -->
 
-
 <main>
+  <!--  Section - QLACK Angular -->
+  <section>
+    {% assign count = 0 %}
+    <div class="container">
+      <header class="section-header text-left">
+        <h2> Fuse </h2>
+      </header>
+      <ul class="faq-items">
+        {%for module in site.data.modules.Fuse %}
+        {% assign count = count | plus: 1 %}
+        <li>
+          <h4 id="menu{{count}}">
+            {{module.title}} </h4>
+          <p>
+            {{ module.description }}
+            <br>
+            <br>
+            <a class="btn btn-dark" target="_noblank"
+               href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.github}}">
+              <span class="button-text">View on GitHub</span>
+            </a>
+            <a class="btn btn-dark" target="_noblank"
+               href="https://search.maven.org/artifact/com.eurodyn.qlack.fuse/qlack-fuse-{{module.maven}}">
+              <span class="button-text">View on Maven</span>
+            </a>
+            <a class="btn btn-dark" target="_noblank"
+               href="https://www.javadoc.io/doc/com.eurodyn.qlack.fuse/qlack-fuse-{{module.javadoc}}">
+              <span class="button-text">View Javadoc</span>
+            </a>
 
+
+          </p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  <!-- END Section - QLACK Angular -->
 </main>

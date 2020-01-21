@@ -100,7 +100,7 @@ Fuse:
     maven: mailing
     javadoc: mailing
     subtitle: mailing
-    title: Mailing moduile
+    title: Mailing module
     description:  the Mailing module provides management services for electronic mail. It allows you
                   to create outgoing emails and keeps track of when an email was sent, the content
                   of the email, the subject, the recipients, as well as the actual body. In case your
