@@ -1,7 +1,4 @@
-######################## Qlack Fuse ###############################################
-###################################################################################
 Fuse:
-
   - aaa:
     github: aaa
     maven: aaa
@@ -13,7 +10,6 @@ Fuse:
       and assign and evaluate permissions. It integrates with Spring Security and can tap
       into an LDAP server. Permission checks can be performed programmaticaly or methods
       can be protected via annotations.
-
   - acv:
     github: acv
     maven: acv
@@ -22,7 +18,6 @@ Fuse:
     title: ACV - Object Auditing, Comparison, and Versioning module
     description:  The ACV module allows you to audit objects for changes, compare objects to discover
       services and version objects to audit changes.
-
   - audit:
     github: audit
     maven: audit
@@ -32,7 +27,6 @@ Fuse:
     description:  The Audit module allows to maintain an application audit. You can define your own
                   audit level and record actions taking place in your back-end together with additional
                   information such as before/after object states.
-
   - content-manager:
     github: content-manager
     maven: content-manager
@@ -44,7 +38,6 @@ Fuse:
                   manage versions of your content, check in/check out, upload/download, etc. The
                   repository can be configured to store your content either in database tables or
                   in the filesystem.
-
   - crypto:
     github: crypto
     maven: crypto
@@ -57,7 +50,6 @@ Fuse:
                   functions. In Crypto module you can find helper method to create, maintain and
                   use Symmetric Cryptography, Asymmetric Cryptography, Signatures generation and
                   validation, Certificate Authority management, and Keystore management.
-
   - fileupload:
     github: fileupload
     maven: fileupload
@@ -69,7 +61,6 @@ Fuse:
                   file upload module you can upload large files in chunks, so that your back-end does
                   not need to handle large files, and you can resume interrupted uploads without
                   having to re-upload chunks previously uploaded.
-
   - imaging:
     github: imaging
     maven: imaging
@@ -80,7 +71,6 @@ Fuse:
                   in a variety of image formats. You can resample images to change the resolution,
                   get information about a specific image file, convert between different image formats,
                   remove transparency, as well as generate QR Codes.
-
   - lexicon:
     github: lexicon
     maven: lexicon
@@ -94,7 +84,6 @@ Fuse:
                   API to programmaticaly manage translations keys and groups. Translations can be
                   downloaded into MS Excel format, so that you can forward them to your translators,
                   and later on re-imported from MS Excel back to the Lexicon module.
-
   - mailing:
     github: mailing
     maven: mailing
@@ -107,7 +96,6 @@ Fuse:
                   email server is unavailablke, the Mailing module retries to send failed emails
                   at a later time while keeping track of the error messages received when communicating
                   with the remote mail server.
-
   - rules:
     github: rules
     maven: rules
@@ -118,7 +106,6 @@ Fuse:
                   industry-standard <a href="https://www.drools.org/" target="_blank">Drools</a> library. By using the Rules module you can start using and
                   evaluating your own rules without having to be exposed to the underling, more complex,
                   API of Drools.
-
   - scheduler:
     github: scheduler
     maven: scheduler
@@ -129,7 +116,6 @@ Fuse:
                   Quartz</a> job scheduler into your Spring Boot application. It provides a simplified
                   API to create and manage jobs, as well as automatic creation of Quartz's database
                   tables into your application's database schema.
-
   - search:
     github: search
     maven: search
@@ -140,7 +126,6 @@ Fuse:
                   <a href="https://www.elastic.co/">Elasticsearch</a>. Using the Search module you
                   can index and query documents with a single line of code, without having to be
                   exposed to the internal mechanisms of Elasticsearch.
-
   - security:
     github: security
     maven: security
@@ -150,7 +135,6 @@ Fuse:
     description:  The Security module allows you to quickly integrate Spring Security with JSON
                   Web Tokens (JWT). It provides functionality to create JWTs as well as validate
                   JWTs on incoming requests.
-
   - settings:
     github: settings
     maven: settings
@@ -161,7 +145,6 @@ Fuse:
                   in your application. Application settings can be used for dynamically configuring
                   your application's runtime environment whereas user settings allow you to provide
                   your users with a personalised experience of their preferences.
-
   - token-server:
     github: token-server
     maven: token-server
@@ -170,7 +153,6 @@ Fuse:
     title: Token server module
     description:  The Token server module provides generation and management of arbitrary tokens.
                   Tokens are stored in database tables and can be associated with expiration dates.
-
   - workflow:
     github: workflow
     maven: workflow
@@ -181,12 +163,7 @@ Fuse:
                   business automation service allowing you to quickly deploy, execute and manage
                   your workflows via simplified API.
 
-
-######################## Qlack Util ###############################################
-###################################################################################
-
 Util:
-
   - av-api:
     github: av-api
     maven: av-api
@@ -195,7 +172,6 @@ Util:
     title: AV API component
     description:  The AntiVirus API provides a generic interface, so that product-specific anti-virus
                   implementations can be plugged into your QLACK-based project.
-
   - clam-av:
     github: clam-av
     maven: clam-av
@@ -203,7 +179,6 @@ Util:
     subtitle: clam-av
     title: Clam AV component
     description:  An implementation of the AV API for Clam AV antivirus.
-
   - data-mongo:
     github: data-mongo
     maven: data-mongo
@@ -212,7 +187,6 @@ Util:
     title: Data MongoDB component
     description:  Provides a Spring Boot compatible implementation layer for storing large files in
                   MongoDB using the GridFS.
-
   - data:
     github: data
     maven: data
@@ -222,7 +196,6 @@ Util:
     description: The Data component provides several utility functions to work with data such as
                  annotation-based encryption/decryption, data filtering on JSON objects (useful to
                  filter sensitive data in your REST endpoints), UTC to/from Instant Jackson serialisers, etc.
-
   - documentation:
     github: documentation
     maven: documentation
@@ -231,7 +204,6 @@ Util:
     title: Documentation component
     description:  The documentation component allows you to quickly generate application documentation
                   based on your Javadoc using Enunciate Swagger-UI libraries.
-
   - fileutils:
     github: fileutils
     maven: fileutils
@@ -240,7 +212,6 @@ Util:
     title: File utils component
     description:  The file util component provides you functionality to work with files, currently
                   supporting stream-based compression & decompression utilities.
-
   - hibernate:
     github: hibernate
     maven: hibernate
@@ -248,7 +219,6 @@ Util:
     subtitle: hibernate
     title: Hibernate component
     description:  Provides additional Hibernate dialect stubs for working with UTF-8 data.
-
   - jwt:
     github: jwt
     maven: jwt
@@ -257,7 +227,6 @@ Util:
     title: JWT component
     description: Provides functionality working with JSON Web Tokens, such as creating JWTs and
                  manipulating claims.
-
   - logger:
     github: logger
     maven: logger
@@ -267,7 +236,6 @@ Util:
     description: Annotation-based method execution logging for debugging. Using a single annotation
                  you can see in your logs which methods are executed, which parameters have been
                  passed, as well as the overall execution time.
-
   - querydsl:
     github: querydsl
     maven: querydsl
@@ -277,10 +245,8 @@ Util:
     description: Annotation-based checks for empty QueryDSL predicates. When using QueryDSL for your
                  REST endpoints this utility component makes sure that empty predicates do not
                  produce an error.
-######################## Qlack Tools ##############################################
-###################################################################################
-Tools:
 
+Tools:
   - liquibase:
     github: liquibase
     maven: liquibase
@@ -291,3 +257,28 @@ Tools:
                  you can evolve your database schema using your favourite database tool and then
                  have all your changes automatically being captured to Liquibase files to be replayed
                  in other environments.
+
+Angular:
+  - form_validation:
+    npm: form-validation
+    subtitle: Form validation
+    title: Form validation
+    description: Automatic error mapping for your reactive forms using JSON-based backend error
+                 messages. If your backend is using Java Bean Validation (JSR 380) you only need to
+                 annotate your Java classes and your Angular form will automagically display
+                 backend validation messags.
+  - pubsub:
+    npm: qng-pubsub
+    subtitle: PubSub
+    title: PubSub
+    description: A TypeScript-based PubSub library. This is a cross-frame publishing/subscribing library
+                 allowing your application to utilise pubsub-style messaging across different
+                 components, layers, and IFrames.
+  - fomrs:
+    npm: forms
+    subtitle: Forms
+    title: Forms
+    description: A utility library to work with Angular forms, providing functionality such as
+                 converts a FormGroup into a query string to be used together with Spring Data for
+                 data-filtering, appending Spring Data pageable parameters to a query string filter,
+                 cleaning up empty or null fields, etc.

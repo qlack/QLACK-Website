@@ -11,9 +11,9 @@ layout: wrapper
   <div class="header-image bg-img-page-angular-header overlay-black overlay-intense">
     <div class="container">
       <h1>
-        <strong>ANGULAR</strong>
+        <strong>QLACK Angular</strong>
       </h1>
-      <h4>QLACK provides libraries for your Angular based application to facilitate everyday
+      <h4>QLACK Angular provides a set of TypeScript libraries for your Angular based application to facilitate everyday
         tasks in your SPA development. Tasks such as automatic mapping of backend data
         validation error messages to your reactive forms, or inter-application communication
         via a PubSub framework are provided via QLACK Angular.
@@ -29,11 +29,9 @@ layout: wrapper
   <section>
     {% assign count = 0 %}
     <div class="container">
-      <header class="section-header text-left">
-        <h2> Fuse </h2>
-      </header>
+
       <ul class="faq-items">
-        {%for module in site.data.modules.Fuse %}
+        {%for module in site.data.modules.Angular %}
         {% assign count = count | plus: 1 %}
         <li>
           <h4 id="menu{{count}}">
@@ -43,19 +41,13 @@ layout: wrapper
             <br>
             <br>
             <a class="btn btn-dark" target="_noblank"
-               href="https://github.com/qlack/QLACK-Java/tree/master/QLACK-Fuse/qlack-fuse-{{module.github}}">
+               href="https://github.com/qlack/QLACK-TypeScript">
               <span class="button-text">View on GitHub</span>
             </a>
             <a class="btn btn-dark" target="_noblank"
-               href="https://search.maven.org/artifact/com.eurodyn.qlack.fuse/qlack-fuse-{{module.maven}}">
-              <span class="button-text">View on Maven</span>
+               href="https://www.npmjs.com/package/@qlack/{{module.npm}}">
+              <span class="button-text">View on NPM</span>
             </a>
-            <a class="btn btn-dark" target="_noblank"
-               href="https://www.javadoc.io/doc/com.eurodyn.qlack.fuse/qlack-fuse-{{module.javadoc}}">
-              <span class="button-text">View Javadoc</span>
-            </a>
-
-
           </p>
         </li>
         {% endfor %}
