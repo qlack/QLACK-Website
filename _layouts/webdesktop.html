@@ -21,43 +21,37 @@ layout: wrapper
         <div class="col-md-1 col-sm-0"></div>
         <div class="col-md-2 col-sm-12 component-center">
           <img
-              src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=duplicated_lines_density"
-              class="badges">
+            src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=duplicated_lines_density"
+            class="badges">
+          <img src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=ncloc"
+            class="badges">
+        </div>
+        <div class="col-md-2 col-sm-12 component-center">
+          <img src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=code_smells"
+            class="badges">
           <img
-              src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=ncloc"
-              class="badges">
+            src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=vulnerabilities"
+            class="badges">
+        </div>
+        <div class="col-md-2 col-sm-12 component-center">
+          <img src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=sqale_index"
+            class="badges">
+          <img src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=sqale_rating"
+            class="badges">
+        </div>
+        <div class="col-md-2 col-sm-12 component-center">
+          <img src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=coverage"
+            class="badges">
+          <img
+            src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=reliability_rating"
+            class="badges">
         </div>
         <div class="col-md-2 col-sm-12 component-center">
           <img
-              src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=code_smells"
-              class="badges">
-          <img
-              src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=vulnerabilities"
-              class="badges">
-        </div>
-        <div class="col-md-2 col-sm-12 component-center">
-          <img
-              src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=sqale_index"
-              class="badges">
-          <img
-              src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=sqale_rating"
-              class="badges">
-        </div>
-        <div class="col-md-2 col-sm-12 component-center">
-          <img
-              src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=coverage"
-              class="badges">
-          <img
-              src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=reliability_rating"
-              class="badges">
-        </div>
-        <div class="col-md-2 col-sm-12 component-center">
-          <img
-              src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=security_rating"
-              class="badges">
-          <img
-              src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=bugs"
-              class="badges">
+            src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=security_rating"
+            class="badges">
+          <img src="https://sonarcloud.io/api/project_badges/measure?project=qlack_QLACK-WebDesktop&metric=bugs"
+            class="badges">
         </div>
         <div class="col-md-1 col-sm-0"></div>
       </div>
@@ -73,20 +67,25 @@ layout: wrapper
       <h4>By integrating your web applications with QLACK WebDesktop you are receiving the following features:</h4>
 
       <ul class="features">
+
         <li>
           <div class="icon">
-            <i class="fa fa-mobile"></i>
+            <i class="fa fa-bars"></i>
           </div>
           <h5>Application Menu</h5>
-          <p>All the integrated applications are displayed under a compact pop-up menu as tiles, defined by their title and icon and can be categorized based on their defined usability (system management, communication, etc.).</p>
+          <p>All the integrated applications are displayed under a compact pop-up menu as tiles, defined by their title
+            and icon and can be categorized based on their defined usability (system management, communication, etc.).
+          </p>
         </li>
 
         <li>
           <div class="icon">
-            <i class="fa fa-cog"></i>
+            <img src="assets\fonts\window.svg" alt="globe img" class="features-section-img" />
           </div>
           <h5>Application Windows</h5>
-          <p>Clicking on the tile of one application will lead to opening an iframe window which will display the front page of the web application and will provide you with the ability to use it exactly the same way you would do on a separate browser window.</p>
+          <p>Clicking on the tile of one application will lead to opening an iframe window which will display the front
+            page of the web application and will provide you with the ability to use it exactly the same way you would
+            do on a separate browser window.</p>
         </li>
 
         <li>
@@ -100,31 +99,22 @@ layout: wrapper
             maximize, drag, close and having multiple instances at the same time.</p>
         </li>
 
-        <li>
-          <div class="icon">
-            <i class="fa fa-code"></i>
-          </div>
-          <h5>Quick Deployment</h5>
-          <p>QLACK WebDesktop can be set up and deployed in less than 20 minutes, by either making use of the
-            embedded Tomcat server or the published Docker images. The installation steps are very easy and can be
-            followed by people with little technical knowledge.
-            </p>
-        </li>
+
+
 
         <li>
           <div class="icon">
-            <i class="fa fa-code"></i>
+            <i class="fa fa-comments" ></i>
           </div>
-          <h5>Easy Integration</h5>
-          <p>Applications can be integrated in the system with 3 different ways, providing the option of adding new
-            applications or editing existing ones, during the steps of deployment or on-the-fly while your system is
-            running in production.
+          <h5>Μessaging System</h5>
+          <p>Qlack WebDesktop can be also used as a messaging broker, which assists the exchange of messages between
+            your application with the user of a custom JavaScript/Angular library.
           </p>
         </li>
-
+        
         <li>
           <div class="icon">
-            <i class="fa fa-code"></i>
+            <i class="fa fa-shield"></i>
           </div>
           <h5>Central Authentication</h5>
           <p>QLACK WebDesktop can be integrated with SSO and LDAP providers, in order to handle the authentication
@@ -134,7 +124,7 @@ layout: wrapper
 
         <li>
           <div class="icon">
-            <i class="fa fa-code"></i>
+            <i class="fa fa-exchange" ></i>
           </div>
           <h5>Reverse Proxy</h5>
           <p>QLACK WebDesktop also operates as a reverse proxy for each integrated application, providing you ability
@@ -144,7 +134,7 @@ layout: wrapper
 
         <li>
           <div class="icon">
-            <i class="fa fa-code"></i>
+            <img src="assets\fonts\globe.svg" alt="globe img" class="features-section-img" />
           </div>
           <h5>Multilingual</h5>
           <p>The installation comes with a variety of translations in multiple languages, which can be easily edited
@@ -155,18 +145,29 @@ layout: wrapper
 
         <li>
           <div class="icon">
-            <i class="fa fa-code"></i>
+            <i class="fa fa-puzzle-piece"></i>
           </div>
-          <h5>Μessaging System</h5>
-          <p>Qlack WebDesktop can be also used as a messaging broker, which assists the exchange of messages between
-            your application with the user of a custom JavaScript/Angular library.
+          <h5>Easy Integration</h5>
+          <p>Applications can be integrated in the system with 3 different ways, providing the option of adding new
+            applications or editing existing ones, during the steps of deployment or on-the-fly while your system is
+            running in production.
+          </p>
+        </li>
+
+        <li>
+          <div class="icon">
+            <i class="fa fa-rocket"></i>
+          </div>
+          <h5>Quick Deployment</h5>
+          <p>QLACK WebDesktop can be set up and deployed in less than 20 minutes, by either making use of the
+            embedded Tomcat server or the published Docker images. The installation steps are very easy and can be
+            followed by people with little technical knowledge.
           </p>
         </li>
       </ul>
 
       <div class="buttons-center">
-        <a class="btn btn-outline btn-dark" target="_noblank"
-           href="https://github.com/qlack/QLACK-WebDesktop">
+        <a class="btn btn-outline btn-dark" target="_noblank" href="https://github.com/qlack/QLACK-WebDesktop">
           <i class="fa fa-github" aria-hidden="true"></i>
           <span class="button-text">View on GitHub</span>
         </a>
@@ -175,21 +176,17 @@ layout: wrapper
           <span class="button-text">View on Maven</span>
         </a>
         <a class="btn btn-outline btn-dark">
-          <img
-              src="assets\fonts\java.svg"
-              alt="triangle with all three sides equal"
-              class="faImgClass"/>
+          <img src="assets\fonts\java.svg" alt="triangle with all three sides equal" class="faImgClass" />
           <span class="button-text">View Javadoc</span>
         </a>
       </div>
       <br>
       <br>
-      <div class="carousel"
-           data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
-        <img src="assets/img/wd/wd3.png"/>
-        <img src="assets/img/wd/wd1.png"/>
-        <img src="assets/img/wd/wd2.png"/>
-        <img src="assets/img/wd/wd4.png"/>
+      <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+        <img src="assets/img/wd/wd3.png" />
+        <img src="assets/img/wd/wd1.png" />
+        <img src="assets/img/wd/wd2.png" />
+        <img src="assets/img/wd/wd4.png" />
       </div>
     </div>
   </section>
