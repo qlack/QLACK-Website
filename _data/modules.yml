@@ -25,8 +25,8 @@ Fuse:
     subtitle: audit
     title: Audit module
     description:  The Audit module allows to maintain an application audit. You can define your own
-                  audit level and record actions taking place in your back-end together with additional
-                  information such as before/after object states.
+      audit level and record actions taking place in your back-end together with additional
+      information such as before/after object states.
   - content-manager:
     github: content-manager
     maven: content-manager
@@ -34,10 +34,10 @@ Fuse:
     subtitle: content-manager
     title: Content manager module
     description:  The Content manager module allows you to organise and maintain a content repository.
-                  Content entries can be in any form, binary or text, and a rich API is provided to
-                  manage versions of your content, check in/check out, upload/download, etc. The
-                  repository can be configured to store your content either in database tables or
-                  in the filesystem.
+      Content entries can be in any form, binary or text, and a rich API is provided to
+      manage versions of your content, check in/check out, upload/download, etc. The
+      repository can be configured to store your content either in database tables or
+      in the filesystem.
   - crypto:
     github: crypto
     maven: crypto
@@ -45,11 +45,11 @@ Fuse:
     subtitle: crypto
     title: Crypto module
     description:  The Crypto modules provides an easy to understand API around commonly used
-                  cryptoraphy-related functionality. Crypto module does not implement itself
-                  any cryptography algorithms as it reuses industry standard libraries for such
-                  functions. In Crypto module you can find helper method to create, maintain and
-                  use Symmetric Cryptography, Asymmetric Cryptography, Signatures generation and
-                  validation, Certificate Authority management, and Keystore management.
+      cryptoraphy-related functionality. Crypto module does not implement itself
+      any cryptography algorithms as it reuses industry standard libraries for such
+      functions. In Crypto module you can find helper method to create, maintain and
+      use Symmetric Cryptography, Asymmetric Cryptography, Signatures generation and
+      validation, Certificate Authority management, and Keystore management.
   - fileupload:
     github: fileupload
     maven: fileupload
@@ -57,10 +57,10 @@ Fuse:
     subtitle: fileupload
     title: File upload module
     description:  The File upload module enhances the regular form-based file upload mechanism with
-                  out of bound, asynchronous, incremental file uploading functionality. With the
-                  file upload module you can upload large files in chunks, so that your back-end does
-                  not need to handle large files, and you can resume interrupted uploads without
-                  having to re-upload chunks previously uploaded.
+      out of bound, asynchronous, incremental file uploading functionality. With the
+      file upload module you can upload large files in chunks, so that your back-end does
+      not need to handle large files, and you can resume interrupted uploads without
+      having to re-upload chunks previously uploaded.
   - imaging:
     github: imaging
     maven: imaging
@@ -68,9 +68,9 @@ Fuse:
     subtitle: imaging
     title: Imaging module
     description:  The Imaging module allows to efficiently perform various image manipulation functions
-                  in a variety of image formats. You can resample images to change the resolution,
-                  get information about a specific image file, convert between different image formats,
-                  remove transparency, as well as generate QR Codes.
+      in a variety of image formats. You can resample images to change the resolution,
+      get information about a specific image file, convert between different image formats,
+      remove transparency, as well as generate QR Codes.
   - lexicon:
     github: lexicon
     maven: lexicon
@@ -78,12 +78,12 @@ Fuse:
     subtitle: lexicon
     title: Lexicon module
     description:  The Lexicon module allows you to quickly and efficiently maintain multilingual
-                  applications. All translations are kept in database tables and can be grouped
-                  together in logical groups. The Lexicon module provides functionality to discover
-                  new translations in your aplication via YAML files while it also supports a rich
-                  API to programmaticaly manage translations keys and groups. Translations can be
-                  downloaded into MS Excel format, so that you can forward them to your translators,
-                  and later on re-imported from MS Excel back to the Lexicon module.
+      applications. All translations are kept in database tables and can be grouped
+      together in logical groups. The Lexicon module provides functionality to discover
+      new translations in your aplication via YAML files while it also supports a rich
+      API to programmaticaly manage translations keys and groups. Translations can be
+      downloaded into MS Excel format, so that you can forward them to your translators,
+      and later on re-imported from MS Excel back to the Lexicon module.
   - mailing:
     github: mailing
     maven: mailing
@@ -91,11 +91,11 @@ Fuse:
     subtitle: mailing
     title: Mailing module
     description:  the Mailing module provides management services for electronic mail. It allows you
-                  to create outgoing emails and keeps track of when an email was sent, the content
-                  of the email, the subject, the recipients, as well as the actual body. In case your
-                  email server is unavailablke, the Mailing module retries to send failed emails
-                  at a later time while keeping track of the error messages received when communicating
-                  with the remote mail server.
+      to create outgoing emails and keeps track of when an email was sent, the content
+      of the email, the subject, the recipients, as well as the actual body. In case your
+      email server is unavailablke, the Mailing module retries to send failed emails
+      at a later time while keeping track of the error messages received when communicating
+      with the remote mail server.
   - rules:
     github: rules
     maven: rules
@@ -103,9 +103,9 @@ Fuse:
     subtitle: rules
     title: Rules module
     description:  The Rules module provides a comprehensive, easy to understand wrapping API over the
-                  industry-standard <a href="https://www.drools.org/" target="_blank">Drools</a> library. By using the Rules module you can start using and
-                  evaluating your own rules without having to be exposed to the underling, more complex,
-                  API of Drools.
+      industry-standard <a href="https://www.drools.org/" target="_blank">Drools</a> library. By using the Rules module you can start using and
+      evaluating your own rules without having to be exposed to the underling, more complex,
+      API of Drools.
   - scheduler:
     github: scheduler
     maven: scheduler
@@ -113,9 +113,9 @@ Fuse:
     subtitle: scheduler
     title: Scheduler module
     description:  The Scheduler module seamlessly integrates <a href="http://www.quartz-scheduler.org/" target="_blank">
-                  Quartz</a> job scheduler into your Spring Boot application. It provides a simplified
-                  API to create and manage jobs, as well as automatic creation of Quartz's database
-                  tables into your application's database schema.
+      Quartz</a> job scheduler into your Spring Boot application. It provides a simplified
+      API to create and manage jobs, as well as automatic creation of Quartz's database
+      tables into your application's database schema.
   - search:
     github: search
     maven: search
@@ -123,9 +123,9 @@ Fuse:
     subtitle: search
     title: Search module
     description:  The Search module provides a production-ready, simplified API over
-                  <a href="https://www.elastic.co/">Elasticsearch</a>. Using the Search module you
-                  can index and query documents with a single line of code, without having to be
-                  exposed to the internal mechanisms of Elasticsearch.
+      <a href="https://www.elastic.co/">Elasticsearch</a>. Using the Search module you
+      can index and query documents with a single line of code, without having to be
+      exposed to the internal mechanisms of Elasticsearch.
   - security:
     github: security
     maven: security
@@ -133,8 +133,8 @@ Fuse:
     subtitle: security
     title: Security module
     description:  The Security module allows you to quickly integrate Spring Security with JSON
-                  Web Tokens (JWT). It provides functionality to create JWTs as well as validate
-                  JWTs on incoming requests.
+      Web Tokens (JWT). It provides functionality to create JWTs as well as validate
+      JWTs on incoming requests.
   - settings:
     github: settings
     maven: settings
@@ -142,9 +142,9 @@ Fuse:
     subtitle: settings
     title: Settings module
     description:  This Settings module allows you to maintain application and user-specific settings
-                  in your application. Application settings can be used for dynamically configuring
-                  your application's runtime environment whereas user settings allow you to provide
-                  your users with a personalised experience of their preferences.
+      in your application. Application settings can be used for dynamically configuring
+      your application's runtime environment whereas user settings allow you to provide
+      your users with a personalised experience of their preferences.
   - token-server:
     github: token-server
     maven: token-server
@@ -152,7 +152,7 @@ Fuse:
     subtitle: token-server
     title: Token server module
     description:  The Token server module provides generation and management of arbitrary tokens.
-                  Tokens are stored in database tables and can be associated with expiration dates.
+      Tokens are stored in database tables and can be associated with expiration dates.
   - workflow:
     github: workflow
     maven: workflow
@@ -160,8 +160,8 @@ Fuse:
     subtitle: workflow
     title: Workflow module
     description:  The Workflow module integrates with <a href="https://www.activiti.org/">Activity</a>
-                  business automation service allowing you to quickly deploy, execute and manage
-                  your workflows via simplified API.
+      business automation service allowing you to quickly deploy, execute and manage
+      your workflows via simplified API.
 
 Util:
   - av-api:
@@ -171,7 +171,7 @@ Util:
     subtitle: av-api
     title: AV API component
     description:  The AntiVirus API provides a generic interface, so that product-specific anti-virus
-                  implementations can be plugged into your QLACK-based project.
+      implementations can be plugged into your QLACK-based project.
   - clam-av:
     github: clam-av
     maven: clam-av
@@ -186,7 +186,7 @@ Util:
     subtitle: data-mongo
     title: Data MongoDB component
     description:  Provides a Spring Boot compatible implementation layer for storing large files in
-                  MongoDB using the GridFS.
+      MongoDB using the GridFS.
   - data:
     github: data
     maven: data
@@ -194,8 +194,8 @@ Util:
     subtitle: data
     title: Data component
     description: The Data component provides several utility functions to work with data such as
-                 annotation-based encryption/decryption, data filtering on JSON objects (useful to
-                 filter sensitive data in your REST endpoints), UTC to/from Instant Jackson serialisers, etc.
+      annotation-based encryption/decryption, data filtering on JSON objects (useful to
+      filter sensitive data in your REST endpoints), UTC to/from Instant Jackson serialisers, etc.
   - documentation:
     github: documentation
     maven: documentation
@@ -203,7 +203,7 @@ Util:
     subtitle: documentation
     title: Documentation component
     description:  The documentation component allows you to quickly generate application documentation
-                  based on your Javadoc using Enunciate Swagger-UI libraries.
+      based on your Javadoc using Enunciate Swagger-UI libraries.
   - fileutils:
     github: fileutils
     maven: fileutils
@@ -211,7 +211,7 @@ Util:
     subtitle: fileutils
     title: File utils component
     description:  The file util component provides you functionality to work with files, currently
-                  supporting stream-based compression & decompression utilities.
+      supporting stream-based compression & decompression utilities.
   - hibernate:
     github: hibernate
     maven: hibernate
@@ -226,7 +226,7 @@ Util:
     subtitle: jwt
     title: JWT component
     description: Provides functionality working with JSON Web Tokens, such as creating JWTs and
-                 manipulating claims.
+      manipulating claims.
   - logger:
     github: logger
     maven: logger
@@ -234,8 +234,8 @@ Util:
     subtitle: logger
     title: Logger component
     description: Annotation-based method execution logging for debugging. Using a single annotation
-                 you can see in your logs which methods are executed, which parameters have been
-                 passed, as well as the overall execution time.
+      you can see in your logs which methods are executed, which parameters have been
+      passed, as well as the overall execution time.
   - querydsl:
     github: querydsl
     maven: querydsl
@@ -243,20 +243,30 @@ Util:
     subtitle: querydsl
     title: QueryDSL component
     description: Annotation-based checks for empty QueryDSL predicates. When using QueryDSL for your
-                 REST endpoints this utility component makes sure that empty predicates do not
-                 produce an error.
+      REST endpoints this utility component makes sure that empty predicates do not
+      produce an error.
 
 Tools:
   - liquibase:
     github: liquibase
-    maven: liquibase
-    javadoc: liquibase
+    maven:
+    javadoc:
     subtitle: liquibase
-    title: Liquibase component
+    title: Liquibase tool
     description: Automatic capturing of database schema changes to Liquibase files. Using this tool
-                 you can evolve your database schema using your favourite database tool and then
-                 have all your changes automatically being captured to Liquibase files to be replayed
-                 in other environments.
+      you can evolve your database schema using your favourite database tool and then
+      have all your changes automatically being captured to Liquibase files to be replayed
+      in other environments.
+  - mavenizr:
+    github: mavenizr
+    maven:
+    javadoc:
+    subtitle: mavenizr
+    title: Mavenizr tool
+    description: Helps to minimize the time needed to install local jar dependencies on your local
+        maven repository and use them directly in your maven project pom file. It allows
+        for quicker transition of legacy projects with local jar files dependencies to a
+        cleaner maven solution.
 
 Angular:
   - form_validation:
@@ -264,21 +274,21 @@ Angular:
     subtitle: Form validation
     title: Form validation
     description: Automatic error mapping for your reactive forms using JSON-based backend error
-                 messages. If your backend is using Java Bean Validation (JSR 380) you only need to
-                 annotate your Java classes and your Angular form will automagically display
-                 backend validation messags.
+      messages. If your backend is using Java Bean Validation (JSR 380) you only need to
+      annotate your Java classes and your Angular form will automagically display
+      backend validation messags.
   - pubsub:
     npm: qng-pubsub
     subtitle: PubSub
     title: PubSub
     description: A TypeScript-based PubSub library. This is a cross-frame publishing/subscribing library
-                 allowing your application to utilise pubsub-style messaging across different
-                 components, layers, and IFrames.
+      allowing your application to utilise pubsub-style messaging across different
+      components, layers, and IFrames.
   - fomrs:
     npm: forms
     subtitle: Forms
     title: Forms
     description: A utility library to work with Angular forms, providing functionality such as
-                 converts a FormGroup into a query string to be used together with Spring Data for
-                 data-filtering, appending Spring Data pageable parameters to a query string filter,
-                 cleaning up empty or null fields, etc.
+      converts a FormGroup into a query string to be used together with Spring Data for
+      data-filtering, appending Spring Data pageable parameters to a query string filter,
+      cleaning up empty or null fields, etc.

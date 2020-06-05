@@ -106,10 +106,7 @@ layout: wrapper
                   
                       </a>
                   </a>
-
-
                 </p>
-
               </li>
               {% endfor %}
 
@@ -128,11 +125,14 @@ layout: wrapper
                      <i class="fa fa-github" aria-hidden="true"></i>
                     <span class="button-text">View on GitHub</span>
                   </a>
+                  {% if module.maven %}
                   <a class="btn btn-outline btn-dark" target="_noblank"
                      href="https://search.maven.org/artifact/com.eurodyn.qlack.tools/qlack-tools-{{module.maven}}">
                      <i class="fa fa-maxcdn" aria-hidden="true"></i>
                     <span class="button-text">View on Maven</span>                  
                   </a>
+                  {% endif %}
+                  {% if module.javadoc %}
                   <a class="btn btn-outline btn-dark" target="_noblank"
                      href="https://www.javadoc.io/doc/com.eurodyn.qlack.tools/qlack-tools-{{module.javadoc}}">
                      <img 
@@ -141,6 +141,7 @@ layout: wrapper
                      class="faImgClass"/>
                     <span class="button-text">View Javadoc</span>
                       </a>
+                  {% endif %}
                   </a>
                 </p>
 
